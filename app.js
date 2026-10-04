@@ -21,11 +21,12 @@ const state = {
 const translations = {
   en: {
     'nav.audit': 'Live Audit',
-    'nav.geo': 'GEO vs SEO',
+    'nav.geo': 'MEO vs AIO',
+    'nav.nap': 'NAP Consistency',
     'nav.dimensions': '8 Dimensions',
-    'nav.libot': 'LIBOT Integration',
+    'nav.libot': 'LIBOT Funnel',
     'nav.builder': 'Enquiry Builder',
-    'nav.pricing': 'Pricing',
+    'nav.contact': 'Contact Us',
     'nav.faq': 'FAQ',
     'nav.cta': 'Let’s talk visibility',
     'hero.eyebrow': 'LOCAL DISCOVERY. REIMAGINED.',
@@ -104,25 +105,25 @@ const translations = {
     'form.templates': 'Try Example:',
     'form.previewTitle': 'Live Message Preview',
     'form.copyBtn': 'Copy Message',
-    'pricing.badge': 'Transparent Pricing',
-    'pricing.title': 'Simple, Predictable Plans',
-    'pricing.desc': 'Semrush costs $139/mo. Ahrefs costs $129/mo. AISeen gives you full traditional SEO + 9 AI Engines + OWASP Security at a fraction of the cost.',
-    'pricing.btnFree': 'Start Free Audit',
-    'pricing.btnStarter': 'Get Starter',
-    'pricing.btnPro': 'Start 7-Day Trial',
-    'pricing.btnEnterprise': 'Contact Enterprise',
-    'faq.title': 'Common Questions',
-    'faq.desc': 'Everything you need to know about Generative Engine Optimization, security, and LIBOT in Thailand.',
-    'faq.q1': 'What is GEO (Generative Engine Optimization) and why is it critical?',
-    'faq.a1': 'GEO is the discipline of optimizing your digital presence so AI engines (ChatGPT, Perplexity, Gemini, Claude, Grok) understand your offerings and directly cite your business when responding to user queries. Traditional SEO ranks keywords in blue links; GEO makes your company the recommended source in synthesized answers.',
-    'faq.q2': 'How does LIBOT integrate with our Thailand LINE Official Account?',
-    'faq.a2': 'LIBOT acts as an intelligent conversational middleware developed by Libralytics Co., Ltd. When visitors generate an audit or enquiry on your site, LIBOT packages the data and routes it directly to your verified LINE OA or WhatsApp channel. It can also be paired with automated 24/7 AI agents that answer Thai and English inquiries in real-time.',
-    'faq.q3': 'Is scanning our site safe and does it affect server load?',
-    'faq.a3': 'Yes, completely safe. AISeen strictly performs non-intrusive public crawl simulations identical to how search engine bots inspect your site. We never request private credentials, modify database records, or inject invasive payloads.',
-    'faq.q4': 'What is Vibe Coding SEO and why do AI-created sites fail?',
-    'faq.a4': 'Websites generated through AI prompts (vibe coding) often look fantastic visually but carry architectural flaws: client-only rendering shells that search bots read as blank, trailing slash duplication, missing canonical URLs, and massive JavaScript payloads. AISeen automatically pinpoints and provides drop-in code fixes for these issues.',
-    'faq.q5': 'Does AISeen support Thailand\'s Personal Data Protection Act (PDPA)?',
-    'faq.a5': 'Yes. Our Consent & Privacy module verifies that your cookie banners comply with Thailand PDPA requirements, ensuring trackers are withheld until explicit consent is obtained and that a clear "Reject All" button is provided without dark patterns.',
+    'contact.badge': 'Window of Opportunity · First-Mover Advantage',
+    'contact.title': 'The Decisive Choice for Local Businesses',
+    'contact.desc': 'Almost no local businesses have adopted AI Optimization (AIO) yet. By acting today, you can secure your position as an "AI-preferred business" ahead of competitors before AI search becomes the universal standard.',
+    'faq.title': 'Frequently Asked Questions to Consider',
+    'faq.desc': 'Everything you need to know about Next-Gen MEO, AIO multi-engine search, NAP consistency, and LIBOT customer retention.',
+    'faq.q1': 'Q1. How does AISEEN differ from standard MEO/AIO services?',
+    'faq.a1': 'Standard MEO services typically target Google Maps alone with manual management, while conventional AIO consulting is fragmented and expensive. AISEEN unifies both traditional MEO and conversational AI search optimization into a single automated solution, using your Google Business Profile (GBP) as the single source of truth across 100+ global platforms.',
+    'faq.q2': 'Q2. Why is system automation necessary instead of manual updates?',
+    'faq.a2': 'Continuously updating 100+ platforms manually is virtually impossible. Furthermore, as AI recommendation algorithms evolve constantly, having a dedicated automated infrastructure is essential to maintain absolute NAP consistency and keep store hours, photos, and attributes perfectly synchronized.',
+    'faq.q3': 'Q3. How soon can we expect to see measurable results?',
+    'faq.a3': 'While 100% guarantees cannot be made, many clients experience tangible results as early as 2 weeks, with highly competitive metropolitan districts typically seeing measurable impact and increased AI citations within 6 months.',
+    'faq.q4': 'Q4. How much operational workload is required from our team?',
+    'faq.a4': 'AISEEN provides full hands-on agency support for all integration, directory linkage, and technical setup tasks. Your operational workload is virtually zero, though regular Google Business Profile updates (e.g. fresh photos and seasonal specials) help accelerate results.',
+    'faq.q5': 'How does LIBOT integrate with our Thailand LINE Official Account?',
+    'faq.a5': 'LIBOT acts as an intelligent conversational middleware developed by Libralytics Co., Ltd. and AIBOT Inc. When visitors discover your store or generate an enquiry, LIBOT automatically converts visitors into LINE friends to drive repeat visits, retention broadcasts, and customer referrals.',
+    'faq.q6': 'Is scanning our site safe and does it affect server load?',
+    'faq.a6': 'Yes, completely safe. AISEEN strictly performs non-intrusive public crawl simulations identical to how search engine bots inspect your site. We never request private credentials, modify database records, or inject invasive payloads.',
+    'faq.q7': 'Does AISEEN support Thailand\'s Personal Data Protection Act (PDPA)?',
+    'faq.a7': 'Yes. Our Consent & Privacy module verifies that your cookie banners comply with Thailand PDPA requirements, ensuring trackers are withheld until explicit consent is obtained and that a clear "Reject All" button is provided without dark patterns.',
     'cta.title': 'Make Your Business Seen Everywhere',
     'cta.desc': 'Join leading Thailand businesses leveraging AISeen and Libralytics to capture high-value AI search traffic. Run your first comprehensive audit in 30 seconds.',
     'cta.btnAudit': 'Run Free 30s Audit →',
@@ -162,11 +163,12 @@ const translations = {
   },
   th: {
     'nav.audit': 'ตรวจสอบสด',
-    'nav.geo': 'GEO เทียบกับ SEO',
+    'nav.geo': 'MEO เทียบกับ AIO',
+    'nav.nap': 'ความสอดคล้อง NAP',
     'nav.dimensions': '8 มิติสุขภาพเว็บ',
     'nav.libot': 'ระบบเชื่อมต่อ LIBOT',
     'nav.builder': 'สร้างข้อความติดต่อ',
-    'nav.pricing': 'ราคาแพ็กเกจ',
+    'nav.contact': 'ติดต่อเรา',
     'nav.faq': 'คำถามที่พบบ่อย',
     'nav.cta': 'ปรึกษาการมองเห็นของแบรนด์',
     'hero.eyebrow': 'การค้นหาในท้องถิ่น ในมิติใหม่',
@@ -245,29 +247,29 @@ const translations = {
     'form.templates': 'เลือกตัวอย่าง:',
     'form.previewTitle': 'ตัวอย่างข้อความพร้อมส่ง',
     'form.copyBtn': 'คัดลอกข้อความ',
-    'pricing.badge': 'ราคาโปร่งใส',
-    'pricing.title': 'แพ็กเกจที่ชัดเจน คุ้มค่า',
-    'pricing.desc': 'Semrush ราคา $139/เดือน Ahrefs ราคา $129/เดือน AISeen มอบทั้ง SEO ดั้งเดิม + 9 AI Engines + OWASP ในราคาที่คุ้มค่ากว่ามาก',
-    'pricing.btnFree': 'เริ่มตรวจฟรี',
-    'pricing.btnStarter': 'เลือกแพ็กเกจ Starter',
-    'pricing.btnPro': 'ทดลองใช้ฟรี 7 วัน',
-    'pricing.btnEnterprise': 'ติดต่อทีม Enterprise',
-    'faq.title': 'คำถามที่พบบ่อย',
-    'faq.desc': 'ทุกสิ่งที่คุณต้องรู้เกี่ยวกับ Generative Engine Optimization, ความปลอดภัยไซเบอร์ และระบบ LIBOT ในประเทศไทย',
-    'faq.q1': 'GEO (Generative Engine Optimization) คืออะไร และทำไมจึงสำคัญมาก?',
-    'faq.a1': 'GEO คือศาสตร์การปรับแต่งเว็บไซต์เพื่อให้ระบบ AI (ChatGPT, Perplexity, Gemini, Claude, Grok) เข้าใจข้อมูลสินค้า/บริการ และอ้างอิงแบรนด์ของคุณเมื่อตอบคำถามผู้ใช้ SEO แบบเดิมแข่งอันดับลิงก์ แต่ GEO ทำให้ธุรกิจของคุณเป็นตัวเลือกที่ AI แนะนำโดยตรง',
-    'faq.q2': 'LIBOT เชื่อมต่อกับ LINE Official Account (LINE OA) อย่างไร?',
-    'faq.a2': 'LIBOT เป็นระบบอัจฉริยะที่พัฒนาโดย บริษัท ไลบราลิทติกส์ จำกัด เมื่อมีผู้สนใจหรือสร้างคำขอตรวจบนเว็บไซต์ ระบบจะจัดระเบียบข้อมูลและส่งเข้า LINE OA หรือ WhatsApp ของทีมขายทันที พร้อมรองรับ AI Agent ตอบคำถามภาษาไทยและอังกฤษตลอด 24 ชั่วโมง',
-    'faq.q3': 'การสแกนเว็บไซต์ปลอดภัยหรือไม่ และกระทบการทำงานของเซิร์ฟเวอร์ไหม?',
-    'faq.a3': 'ปลอดภัย 100% AISeen จำลองการเข้าชมของบ็อตค้นหาสาธารณะอย่างอ่อนโยน ไม่มีการขอรหัสผ่าน ไม่มีการแก้ไขฐานข้อมูล และไม่มีการยิงเพย์โหลดที่ทำให้ระบบขัดข้อง',
-    'faq.q4': 'Vibe Coding SEO คืออะไร และทำไมเว็บไซต์ที่สร้างด้วย AI จึงมักมีปัญหา?',
-    'faq.a4': 'เว็บไซต์ที่สร้างด้วย AI (Vibe Coding) มักมีดีไซน์ที่สวยงาม แต่ขาดโครงสร้างเชิงเทคนิค เช่น การเรนเดอร์แบบ Client-side อย่างเดียวทำให้บ็อตมองเห็นเป็นหน้าเปล่า, ปัญหา Trailing Slash ซ้ำซ้อน และไฟล์ JavaScript หนักเกินไป AISeen ช่วยตรวจจับและให้โค้ดแก้ไขทันที',
-    'faq.q5': 'AISeen รองรับ พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) ของไทยหรือไม่?',
-    'faq.a5': 'รองรับอย่างสมบูรณ์แบบ โมดูล Privacy ของเราตรวจสอบว่าแบนเนอร์คุกกี้ของคุณมีการกักกัน Tracker ก่อนได้รับความยินยอม และมีปุ่มปฏิเสธคุกกี้ที่ชัดเจนตามมาตรฐาน PDPA ของประเทศไทย',
+    'contact.badge': 'โอกาสและทางเลือกสำคัญ · ความได้เปรียบของผู้เริ่มต้นก่อน',
+    'contact.title': 'ทางเลือกสำคัญเพื่อความอยู่รอดของธุรกิจในยุค AI',
+    'contact.desc': 'ในขณะที่ธุรกิจในท้องถิ่นส่วนใหญ่ยังไม่ได้เริ่มทำ AI Optimization (AIO) การลงมือทำในวันนี้จะช่วยให้คุณครองตำแหน่งร้านค้าที่ AI เลือกแนะนำได้ก่อนใคร',
+    'faq.title': 'คำถามที่พบบ่อยที่ควรพิจารณา',
+    'faq.desc': 'ทุกสิ่งที่คุณต้องรู้เกี่ยวกับ Next-Gen MEO, การค้นหาแบบ AI AIO, ความสอดคล้องของข้อมูล NAP และการรักษาลูกค้าด้วย LIBOT',
+    'faq.q1': 'Q1. AISEEN แตกต่างจากบริการ MEO และ AIO ทั่วไปอย่างไร?',
+    'faq.a1': 'บริการ MEO ทั่วไปมักเน้นเพียง Google Maps อย่างเดียวและจัดการด้วยมือ ขณะที่การปรึกษา AIO มักกระจัดกระจายและมีราคาสูง AISEEN รวมทั้ง MEO และ AIO เข้าด้วยกันในระบบอัตโนมัติเดียว โดยใช้ Google Business Profile (GBP) เป็นแหล่งข้อมูลหลัก (Source of Truth) ส่งต่อไปยังกว่า 100 แพลตฟอร์มทั่วโลก',
+    'faq.q2': 'Q2. ทำไมการซิงก์ด้วยระบบอัตโนมัติจึงจำเป็นมากกว่าการอัปเดตด้วยมือ?',
+    'faq.a2': 'การอัปเดตข้อมูลบน 100+ แพลตฟอร์มด้วยมืออย่างต่อเนื่องเป็นไปได้ยากมากในทางปฏิบัติ อีกทั้งอัลกอริทึมของ AI ยังมีการพัฒนาอยู่ตลอดเวลา โครงสร้างพื้นฐานแบบอัตโนมัติจึงจำเป็นต่อการรักษาความสอดคล้องของข้อมูล NAP (ชื่อ ที่อยู่ เบอร์โทร) ให้ตรงกัน 100%',
+    'faq.q3': 'Q3. นานแค่ไหนจึงจะเริ่มเห็นผลลัพธ์ที่วัดผลได้?',
+    'faq.a3': 'แม้จะไม่สามารถการันตี 100% ได้ แต่ลูกค้าจำนวนมากเริ่มเห็นผลลัพธ์และทราฟฟิกที่ดีขึ้นในเวลาเพียง 2 สัปดาห์ และสำหรับย่านที่มีการแข่งขันสูง มักเห็นผลลัพธ์ที่ชัดเจนและโอกาสการถูกอ้างอิงใน AI เพิ่มขึ้นอย่างมีนัยสำคัญภายใน 6 เดือน',
+    'faq.q4': 'Q4. ทีมงานของลูกค้าต้องมีภาระงานในการดูแลมากน้อยเพียงใด?',
+    'faq.a4': 'ทีมงาน AISEEN ดูแลการตั้งค่า การเชื่อมโยงระบบ และการจัดการเชิงเทคนิคให้ทั้งหมด ภาระงานของลูกค้าแทบจะเป็นศูนย์ เพียงแค่อัปเดตรูปถ่ายร้านใหม่ๆ หรือโปรโมชันบน Google Business Profile ตามปกติเพื่อช่วยเร่งผลลัพธ์',
+    'faq.q5': 'LIBOT เชื่อมต่อกับ LINE Official Account (LINE OA) อย่างไร?',
+    'faq.a5': 'LIBOT เป็นระบบที่พัฒนาโดย Libralytics และ AIBOT Inc. เมื่อลูกค้าค้นพบร้านของคุณจาก AI หรือติดต่อเข้ามา ระบบจะเปลี่ยนผู้เยี่ยมชมให้เป็นเพื่อนใน LINE OA เพื่อสร้างความสัมพันธ์ต่อเนื่อง ส่งบรอดแคสต์รักษาฐานลูกค้า และต่อยอดการบอกต่อ (Referrals)',
+    'faq.q6': 'การสแกนเว็บไซต์ปลอดภัยหรือไม่ และกระทบการทำงานของเซิร์ฟเวอร์ไหม?',
+    'faq.a6': 'ปลอดภัย 100% AISEEN จำลองการเข้าชมของบ็อตค้นหาสาธารณะอย่างอ่อนโยน ไม่มีการขอรหัสผ่าน ไม่มีการแก้ไขฐานข้อมูล และไม่มีการยิงเพย์โหลดที่ทำให้ระบบขัดข้อง',
+    'faq.q7': 'AISEEN รองรับ พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) ของไทยหรือไม่?',
+    'faq.a7': 'รองรับอย่างสมบูรณ์แบบ โมดูล Privacy ของเราตรวจสอบว่าแบนเนอร์คุกกี้ของคุณมีการกักกัน Tracker ก่อนได้รับความยินยอม และมีปุ่มปฏิเสธคุกกี้ที่ชัดเจนตามมาตรฐาน PDPA ของประเทศไทย',
     'cta.title': 'ทำให้ธุรกิจของคุณถูกมองเห็นในทุกระบบ AI',
-    'cta.desc': 'ร่วมเป็นผู้นำธุรกิจในไทยที่ใช้ AISeen และ Libralytics เพื่อคว้าทราฟฟิกลูกค้าคุณภาพสูงจาก AI Search เริ่มตรวจฟรีใน 30 วินาที',
-    'cta.btnAudit': 'ตรวจฟรีใน 30 วินาที →',
-    'cta.btnLibot': 'ติดต่อ Libralytics ทาง LINE',
+    'cta.desc': 'ร่วมเป็นผู้นำธุรกิจในไทยที่ใช้ AISEEN และ Libralytics เพื่อคว้าทราฟฟิกลูกค้าคุณภาพสูงจาก AI Search ปรึกษาทีมงานได้ทันทีวันนี้',
+    'cta.btnAudit': 'ขอรับรายงานสรุปการมองเห็น →',
+    'cta.btnLibot': 'ติดต่อ Libralytics ทาง LINE OA',
     'nav.how': 'ขั้นตอนการทำงาน',
     'audit.exportBtn': 'ส่งออกรายงาน',
     'audit.shareBtn': 'แชร์ผลตรวจ',
@@ -348,10 +350,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
   initMobileMenu();
   initLanguageSelector();
-  initCurrencySelector();
   initHeroRotator();
   updateEnquiryPreview();
-  renderPricing();
 });
 
 // --- Hero Rotating Text Engine (Reference CI) ---
@@ -444,55 +444,71 @@ function setLanguage(lang) {
     }
   });
 
-  renderPricing();
   updateEnquiryPreview();
   showToast(lang === 'th' ? 'เปลี่ยนภาษาเป็น ภาษาไทย เรียบร้อยแล้ว' : 'Switched language to English');
 }
 
-// --- Currency Switcher ---
+// --- Currency Switcher (Safe No-Op) ---
 function initCurrencySelector() {
   const btnUSD = document.getElementById('btnCurrUSD');
   const btnTHB = document.getElementById('btnCurrTHB');
-
-  btnUSD.addEventListener('click', () => setCurrency('USD'));
-  btnTHB.addEventListener('click', () => setCurrency('THB'));
+  if (btnUSD && btnTHB) {
+    btnUSD.addEventListener('click', () => setCurrency('USD'));
+    btnTHB.addEventListener('click', () => setCurrency('THB'));
+  }
 }
 
 function setCurrency(curr) {
   state.currency = curr;
-  document.getElementById('btnCurrUSD').classList.toggle('active', curr === 'USD');
-  document.getElementById('btnCurrTHB').classList.toggle('active', curr === 'THB');
-  renderPricing();
-  showToast(`Currency changed to ${curr}`);
 }
 
-// --- Billing Period Toggle ---
 window.setBilling = function(period) {
   state.billing = period;
-  document.getElementById('btnBillMonthly').classList.toggle('active', period === 'monthly');
-  document.getElementById('btnBillAnnual').classList.toggle('active', period === 'annual');
-  renderPricing();
 };
 
 function renderPricing() {
-  const p = pricingMatrix[state.billing][state.currency];
-  const symbol = state.currency === 'USD' ? '$' : '฿';
-
-  document.getElementById('curFree').textContent = symbol;
-  document.getElementById('amtFree').textContent = p.free;
-
-  document.getElementById('curStarter').textContent = symbol;
-  document.getElementById('amtStarter').textContent = p.starter;
-  document.getElementById('perStarter').textContent = p.period;
-
-  document.getElementById('curPro').textContent = symbol;
-  document.getElementById('amtPro').textContent = p.pro;
-  document.getElementById('perPro').textContent = p.period;
-
-  document.getElementById('curEnt').textContent = symbol;
-  document.getElementById('amtEnt').textContent = p.ent;
-  document.getElementById('perEnt').textContent = p.period;
+  // Pricing removed - consultation & custom deployment only
 }
+
+// --- Consultation Form Handler (Direct Delivery via LINE OA / CRM) ---
+window.handleConsultationSubmit = function(e) {
+  e.preventDefault();
+  const business = document.getElementById('cfBusinessName')?.value.trim() || 'Business';
+  const url = document.getElementById('cfUrl')?.value.trim() || '';
+  const locs = document.getElementById('cfLocations')?.value || '1 Store';
+  const name = document.getElementById('cfContactName')?.value.trim() || '';
+  const phone = document.getElementById('cfContactPhone')?.value.trim() || '';
+  const email = document.getElementById('cfEmail')?.value.trim() || '';
+  const notes = document.getElementById('cfNotes')?.value.trim() || '';
+
+  showToast(`Consultation brief generated for ${business}!`);
+  
+  const payload = 
+    `[AISEEN Thailand Visibility Brief Request]\n` +
+    `Business: ${business}\n` +
+    `Target URL: ${url}\n` +
+    `Locations: ${locs}\n` +
+    `Contact: ${name} (${phone})\n` +
+    `Email: ${email}\n` +
+    (notes ? `Key Objectives: ${notes}\n` : '') +
+    `Submission Date: ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}`;
+
+  // Also pre-fill enquiry builder preview if user switches tabs
+  const ebNotes = document.getElementById('ebNotes');
+  if (ebNotes) {
+    ebNotes.value = payload;
+    updateEnquiryPreview();
+  }
+
+  // Offer direct deep link to LINE OA
+  setTimeout(() => {
+    const lineUrl = `https://line.me/R/oaMessage/@libralytics/?` + encodeURIComponent(payload);
+    const opened = window.open(lineUrl, '_blank');
+    if (!opened) {
+      alert(`Thank you ${name}! Your visibility consultation brief has been recorded. Our specialist will contact you at ${email} / ${phone}.`);
+    }
+  }, 600);
+};
 
 // --- Live Audit Scanner Engine ---
 window.setAuditTarget = function(domain) {

@@ -94,17 +94,17 @@
       <nav>
         <ul class="nav-links" id="navLinks">
           <li><a href="#live-audit" class="nav-link" data-i18n="nav.audit">Live Audit</a></li>
-          <li><a href="#geo-vs-seo" class="nav-link" data-i18n="nav.geo">GEO vs SEO</a></li>
+          <li><a href="#geo-vs-seo" class="nav-link" data-i18n="nav.geo">MEO vs AIO</a></li>
+          <li><a href="#nap-consistency" class="nav-link" data-i18n="nav.nap">NAP Consistency</a></li>
           <li><a href="#dimensions" class="nav-link" data-i18n="nav.dimensions">8 Dimensions</a></li>
-          <li><a href="#how-it-works" class="nav-link" data-i18n="nav.how">How It Works</a></li>
-          <li><a href="#libot-integration" class="nav-link" data-i18n="nav.libot">LIBOT Integration</a></li>
+          <li><a href="#libot-integration" class="nav-link" data-i18n="nav.libot">LIBOT Funnel</a></li>
           <li><a href="#enquiry-builder" class="nav-link" data-i18n="nav.builder">Enquiry Builder</a></li>
-          <li><a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact Us</a></li>
           <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </nav>
 
-      <!-- Nav Controls: Language, Currency, CTAs -->
+      <!-- Nav Controls: Language, CTAs -->
       <div class="nav-actions">
         <!-- Language Switcher (EN / TH) -->
         <div class="control-switch" title="Change Language">
@@ -112,13 +112,7 @@
           <button class="switch-btn" id="btnLangTH">ไทย</button>
         </div>
 
-        <!-- Currency Switcher ($ / ฿) -->
-        <div class="control-switch" title="Change Currency">
-          <button class="switch-btn active" id="btnCurrUSD">$</button>
-          <button class="switch-btn" id="btnCurrTHB">฿</button>
-        </div>
-
-        <a href="#enquiry-builder" class="btn btn-primary btn-sm" data-i18n="nav.cta">Let’s talk visibility</a>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Let’s talk visibility</a>
 
         <!-- Mobile Nav Toggle -->
         <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
@@ -296,6 +290,28 @@
         <div class="metric-cell">
           <span class="metric-val emerald">PDPA</span>
           <span class="metric-lbl" data-i18n="metric.pdpa">Thai Compliance</span>
+        </div>
+      </div>
+
+      <!-- Slide 3 Media Coverage & Press Achievements (Deck Aligned) -->
+      <div class="media-press-strip">
+        <div class="media-press-label">
+          <span>◈ Featured in 70+ Media Publications:</span>
+        </div>
+        <div class="media-press-items">
+          <span>Nikkei Business Daily</span>
+          <span class="media-press-sep">·</span>
+          <span>The Sankei Shimbun</span>
+          <span class="media-press-sep">·</span>
+          <span>Asahi Shimbun Digital</span>
+          <span class="media-press-sep">·</span>
+          <span>NewsPicks</span>
+          <span class="media-press-sep">·</span>
+          <span>Techable</span>
+          <span class="media-press-sep">·</span>
+          <span>[REC] Award 2025</span>
+          <span class="media-press-sep">·</span>
+          <span>Best Venture 100</span>
         </div>
       </div>
     </div>
@@ -751,7 +767,7 @@ location ~* /\.(env|git|htaccess|docker|aws) {
     </div>
   </section>
 
-  <!-- Section: Google SEO vs GEO (Generative Engine Optimization) -->
+  <!-- Section: Google SEO vs GEO & AIO (Deck Aligned: Slides 4-10) -->
   <section class="section" id="geo-vs-seo">
     <div class="container">
       <div class="section-header">
@@ -759,47 +775,154 @@ location ~* /\.(env|git|htaccess|docker|aws) {
           <span class="badge-pulse"></span>
           <span data-i18n="geo.badge">The Paradigm Shift</span>
         </span>
-        <h2 class="section-title" data-i18n="geo.title">Traditional SEO vs AI GEO</h2>
+        <h2 class="section-title" data-i18n="geo.title">Moving from "Googling" to "Asking AI"</h2>
         <p class="section-desc" data-i18n="geo.desc">
-          Millions of high-intent clients now research, compare, and choose vendors directly inside AI conversations without ever clicking a 10-blue-links page.
+          People now ask AI for nearby spots in natural conversational language. When AI recommends stores, users accept these suggestions — creating a new gateway that directly drives visits.
         </p>
       </div>
 
+      <!-- Slide 5, 6, 7 Official Research Statistics Grid -->
+      <div class="deck-stats-grid">
+        <div class="deck-stat-card">
+          <div class="deck-stat-num">37.0%</div>
+          <div class="deck-stat-label">Daily AI Search Adoption</div>
+          <div class="deck-stat-desc">+15.7 percentage points surge in approx. 9 months across everyday consumers.</div>
+          <div class="deck-stat-source">Source: CyberAgent Survey (March 2026)</div>
+        </div>
+        <div class="deck-stat-card">
+          <div class="deck-stat-num">66.9%</div>
+          <div class="deck-stat-label">AI Search Among Teens</div>
+          <div class="deck-stat-desc">Already the standard search behavior for the next generation of consumers.</div>
+          <div class="deck-stat-source">Source: CyberAgent Survey (Published in Web Tan)</div>
+        </div>
+        <div class="deck-stat-card">
+          <div class="deck-stat-num">~11x</div>
+          <div class="deck-stat-label">Adoption Speed Surge</div>
+          <div class="deck-stat-desc">Generative AI usage expanded elevenfold from 3.4% to 38.9% in just 2.5 years.</div>
+          <div class="deck-stat-source">Source: Nippon Research Center (NRC, Sept 2025)</div>
+        </div>
+        <div class="deck-stat-card">
+          <div class="deck-stat-num">Nearly 60%</div>
+          <div class="deck-stat-label">Store Visit Conversion</div>
+          <div class="deck-stat-desc">Visit the store 1 out of every 2 times after AI recommendation — surpassing SNS & influencers (&lt;50%).</div>
+          <div class="deck-stat-source">Source: COLLINS Inc. Restaurant Selection Survey</div>
+        </div>
+      </div>
+
+      <!-- Slide 8: The Invisible Opportunity Loss Warning Box -->
+      <div style="background: rgba(23, 46, 36, 0.04); border-left: 4px solid var(--accent-emerald); border-radius: var(--radius-md); padding: 20px 24px; margin: 28px 0; font-size: 0.9375rem; color: var(--text-main); line-height: 1.6;">
+        <strong style="color: #172e24; display: block; margin-bottom: 4px; font-family: var(--font-heading);">
+          ✦ The Risk of Inaction: Invisible Opportunity Loss
+        </strong>
+        <span>
+          When asking AI for "nearby spots" becomes the norm, businesses not recognized by AI won't even make the shortlist. This is not merely sinking to page 2 of Google results — it means ceasing to exist as an option. No matter how much you spend on ads or coupons, if omitted from AI recommendations, you cannot recover those lost customers.
+        </span>
+      </div>
+
       <div class="compare-container">
-        <!-- Card 1: Traditional Google SEO -->
+        <!-- Card 1: Traditional Google SEO & MEO -->
         <div class="compare-card traditional">
           <div class="compare-header">
             <div class="compare-icon">⌕</div>
             <div>
-              <div class="compare-title" data-i18n="geo.tradTitle">Traditional SEO</div>
-              <div class="compare-subtitle">Google Blue Links Paradigm</div>
+              <div class="compare-title" data-i18n="geo.tradTitle">Traditional MEO & SEO</div>
+              <div class="compare-subtitle">Google Maps Only · Blue Links Paradigm</div>
             </div>
           </div>
           <ul class="compare-list">
-            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad1">Competes for 10 static keyword positions on page 1</span></li>
-            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad2">User must physically click through your link to read answers</span></li>
-            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad3">High ad pollution: top 4 results are sponsored ads</span></li>
-            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad4">Keyword stuffing & backlink gaming dictate visibility</span></li>
-            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad5">Zero conversation: static landing page with high bounce rate</span></li>
+            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad1">Targets only Google Maps and 10 static keyword links</span></li>
+            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad2">User must manually sift through dozens of reviews and pinpoints</span></li>
+            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad3">Zero multi-engine AI search coverage (invisible on ChatGPT & Perplexity)</span></li>
+            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad4">Manual directory updates: highly prone to NAP inconsistencies</span></li>
+            <li><span class="compare-bullet">→</span> <span data-i18n="geo.trad5">High ad clutter: sponsored ads push organic pins below the fold</span></li>
           </ul>
         </div>
 
-        <!-- Card 2: Generative Engine Optimization (GEO) -->
+        <!-- Card 2: AISEEN Next-Generation MEO + AIO -->
         <div class="compare-card geo">
           <div class="compare-header">
             <div class="compare-icon">✳</div>
             <div>
-              <div class="compare-title" data-i18n="geo.geoTitle">GEO (Generative Engine Optimization)</div>
-              <div class="compare-subtitle">ChatGPT · Perplexity · Gemini · Claude</div>
+              <div class="compare-title" data-i18n="geo.geoTitle">AISEEN Next-Gen MEO + AIO</div>
+              <div class="compare-subtitle">Google Maps + ChatGPT + Gemini + Perplexity + 100+ Platforms</div>
             </div>
           </div>
           <ul class="compare-list">
-            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo1">AI explicitly synthesizes and names your company as the top recommendation</span></li>
-            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo2">Zero-click direct answer citation: user trusts the authoritative endorsement</span></li>
-            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo3">Synthesized from knowledge graphs, structured JSON-LD, and llms.txt</span></li>
-            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo4">Multi-lingual reasoning: serves Thai, English, Chinese & Japanese queries</span></li>
-            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo5">Direct hand-off into automated enquiries via LINE OA & WhatsApp</span></li>
+            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo1">Simultaneous optimization for Google Maps and conversational AI engines</span></li>
+            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo2">AI synthesizes and names your store as the top authoritative recommendation</span></li>
+            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo3">Google Business Profile (GBP) configured as Single Source of Truth</span></li>
+            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo4">Automated NAP sync across 100+ global maps, directories, and AI crawlers</span></li>
+            <li><span class="compare-bullet">✓</span> <span data-i18n="geo.geo5">Direct hand-off into automated customer retention via LIBOT LINE OA</span></li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Slide 10: Official Competitor Comparison Matrix -->
+      <div style="margin-top: 48px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <span class="badge-tag emerald">
+            <span>Slide 10 Benchmark Matrix</span>
+          </span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #172e24; margin-top: 8px;">
+            What Sets AISEEN Apart from Competitors?
+          </h3>
+          <p style="font-size: 0.875rem; color: var(--text-dim); max-width: 650px; margin: 4px auto 0;">
+            AISEEN is the "Next-Generation MEO" that builds upon standard MEO to deliver complete, all-in-one optimization tailored for the AI search era.
+          </p>
+        </div>
+
+        <div class="meo-table-wrap">
+          <table class="meo-table">
+            <thead>
+              <tr>
+                <th style="width: 44%;">Core Function & Optimization Scope</th>
+                <th style="width: 28%; text-align: center;">Other Services / Competitors<br><span style="font-size: 0.75rem; font-weight: 400; color: var(--text-muted);">(MEO Only, Manual)</span></th>
+                <th class="th-seen" style="width: 28%; text-align: center;">AISEEN<br><span style="font-size: 0.75rem; font-weight: 600; color: var(--accent-emerald);">(MEO + AIO Integrated, Automated Sync)</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Google Business Profile (GBP) Optimization</strong></td>
+                <td style="text-align: center;"><span class="check-green">✓</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>Google Maps Optimization</strong></td>
+                <td style="text-align: center;"><span class="check-green">✓</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>Review Management & Response Optimization</strong></td>
+                <td style="text-align: center;"><span class="check-green">✓</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>NAP Consistency (Multi-Directory Store Integration)</strong></td>
+                <td style="text-align: center;"><span class="delta-yellow" title="Partial / Manual">△</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>ChatGPT Optimization & Citation Structuring</strong></td>
+                <td style="text-align: center;"><span class="cross-gray">✕</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>Gemini & Google AI Overviews Optimization</strong></td>
+                <td style="text-align: center;"><span class="cross-gray">✕</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>Perplexity & Next-Gen AI Search Optimization (AIO)</strong></td>
+                <td style="text-align: center;"><span class="cross-gray">✕</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+              <tr>
+                <td><strong>Automated Information Distribution to 100+ Platforms</strong></td>
+                <td style="text-align: center;"><span class="cross-gray">✕</span></td>
+                <td class="td-seen" style="text-align: center;"><span class="check-green">✓</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -810,16 +933,121 @@ location ~* /\.(env|git|htaccess|docker|aws) {
             <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
             </svg>
-            <span>User prompt in ChatGPT: "Recommend the best anti-aging & wellness clinic in Bangkok for international travelers"</span>
+            <span>User prompt in ChatGPT: "Where is a well-reviewed medical wellness clinic in Bangkok?"</span>
           </div>
           <span style="font-size: 0.75rem; color: #a5b4fc; font-family: var(--font-mono);">AI Model: GPT-4o with GEO Citation</span>
         </div>
         <div class="ai-answer-body">
-          "Based on medical accreditations, English-fluent medical staff, and specialized longevity diagnostics in Bangkok, 
-          <span class="ai-citation-tag">Bangkok Wellness Clinic [1]</span> ranks among the most reputable centers. 
-          Located in Sukhumvit 24, they offer preventative cellular therapies with dedicated international patient coordinators reachable directly via their 
+          "Based on consistent medical licensing, verified clinic hours, and verified patient reviews across Google Business Profile, Apple Maps, and verified directories, 
+          <span class="ai-citation-tag">Bangkok Wellness Clinic [1]</span> ranks as a premier choice. 
+          Located in Sukhumvit 24, their verified contact is reachable directly via phone or their 
           <span class="ai-citation-tag">Official LINE OA [2]</span>."
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: NAP Consistency as the Foundation for AI Trust (Deck Aligned: Slides 11-13) -->
+  <section class="section" id="nap-consistency">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag emerald">
+          <span class="badge-pulse"></span>
+          <span>Core AI Selection Metric</span>
+        </span>
+        <h2 class="section-title">NAP Consistency: The Foundation for AI Trust</h2>
+        <p class="section-desc">
+          To be recognized as a "trustworthy store" by AI, the most fundamental and crucial factor is NAP consistency. AI engines cross-reference identical data across all online media before making recommendations.
+        </p>
+      </div>
+
+      <!-- 3 NAP Element Cards (Slide 11) -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 32px 0;">
+        <div style="background: #ffffff; border: 1px solid rgba(23, 46, 36, 0.08); border-radius: var(--radius-lg); padding: 24px; text-align: center; box-shadow: 0 4px 16px rgba(23, 46, 36, 0.03);">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--bg-surface-3); color: var(--accent-emerald); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">N</div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: #172e24; margin-bottom: 4px;">Name</h4>
+          <p style="font-size: 0.8125rem; color: var(--text-dim); margin: 0;">Official Store & Legal Entity Name unified without character mismatch.</p>
+        </div>
+        <div style="background: #ffffff; border: 1px solid rgba(23, 46, 36, 0.08); border-radius: var(--radius-lg); padding: 24px; text-align: center; box-shadow: 0 4px 16px rgba(23, 46, 36, 0.03);">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--bg-surface-3); color: var(--accent-emerald); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">A</div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: #172e24; margin-bottom: 4px;">Address</h4>
+          <p style="font-size: 0.8125rem; color: var(--text-dim); margin: 0;">Precise building, floor, sub-district, district, and postal code syntax.</p>
+        </div>
+        <div style="background: #ffffff; border: 1px solid rgba(23, 46, 36, 0.08); border-radius: var(--radius-lg); padding: 24px; text-align: center; box-shadow: 0 4px 16px rgba(23, 46, 36, 0.03);">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--bg-surface-3); color: var(--accent-emerald); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">P</div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: #172e24; margin-bottom: 4px;">Phone</h4>
+          <p style="font-size: 0.8125rem; color: var(--text-dim); margin: 0;">Verified business contact phone number in standardized format.</p>
+        </div>
+      </div>
+
+      <!-- Slide 12 Key Criteria Banner -->
+      <div style="background: #ffffff; border: 1px solid rgba(23, 46, 36, 0.1); border-radius: var(--radius-xl); padding: 28px 32px; margin-bottom: 32px;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #172e24; margin-bottom: 12px;">
+          AI Only Recommends Businesses It Accurately and Unambiguously Understands
+        </h3>
+        <p style="font-size: 0.875rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 20px;">
+          Why is being "recognized" by AI so crucial? Because AI only presents businesses it deems trustworthy. If your business information is fragmented, outdated, or omitted from major directories, the AI suspends judgment to avoid giving bad information — withholding the recommendation entirely.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+          <div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald); font-weight: 700;">01</span>
+            <h5 style="font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 700; color: #172e24; margin: 4px 0;">Structured & Complete Info</h5>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Consistent address, hours, and service categories prevent exclusion.</p>
+          </div>
+          <div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald); font-weight: 700;">02</span>
+            <h5 style="font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 700; color: #172e24; margin: 4px 0;">Presence in Trusted Sources</h5>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; margin: 0;">AI cross-references 100+ platforms. Unlisted businesses are skipped.</p>
+          </div>
+          <div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #dc2626; font-weight: 700;">03</span>
+            <h5 style="font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 700; color: #172e24; margin: 4px 0;">Not Recognized = Not Displayed</h5>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; margin: 0;">No matter how great your store is, if unrecognized by AI, you cease to exist.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 13 Concrete Example Comparison -->
+      <div class="nap-compare-row">
+        <!-- Inconsistent Box -->
+        <div class="nap-box inconsistent">
+          <div class="nap-box-header">
+            <span class="nap-box-title">✕ Inconsistent Data (Common Issue)</span>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: #dc2626; font-weight: 700;">Skipped by AI</span>
+          </div>
+          <ul class="nap-list">
+            <li>Google Maps: 02-123-4567</li>
+            <li>Local Directory: 021234567</li>
+            <li>Official Website: Sukhumvit Wellness Co., Ltd. / 3F</li>
+            <li>Social Media: Sukhumvit Wellness (No floor name)</li>
+          </ul>
+          <div class="nap-footer-outcome">
+            ➔ AI wonders: "Are these different businesses?" and suspends recommendation.
+          </div>
+        </div>
+
+        <!-- Consistent Box -->
+        <div class="nap-box consistent">
+          <div class="nap-box-header">
+            <span class="nap-box-title">✓ Consistent Data (Auto-aligned by AISEEN)</span>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: #398648; font-weight: 700;">Recommended by AI</span>
+          </div>
+          <ul class="nap-list">
+            <li>Unified Name: Bangkok Wellness Co., Ltd.</li>
+            <li>Unified Address: 123 Sukhumvit Soi 24, Klongton, Klongtoey, Bangkok 10110</li>
+            <li>Unified Phone: +66 2 123 4567</li>
+            <li>Unified Categories & Verified Doctor Credentials</li>
+          </ul>
+          <div class="nap-footer-outcome">
+            ➔ AI recognizes as "trustworthy, active business" and proactively cites in search.
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 16px;">
+        <p style="font-size: 0.8125rem; color: var(--text-dim); margin-bottom: 0;">
+          It is practically impossible to keep aligning 100+ directories manually. AISEEN uses your Google Business Profile (GBP) as the single "Source of Truth" and continuously auto-aligns data.
+        </p>
       </div>
     </div>
   </section>
@@ -1242,12 +1470,20 @@ location ~* /\.(env|git|htaccess|docker|aws) {
             <span data-i18n="libot.badge">Exclusive Libralytics Feature</span>
           </div>
           <h2 class="libot-title">
-            <span data-i18n="libot.title1">Convert AI Search Traffic</span><br>
-            <span class="gradient-accent" data-i18n="libot.title2">Directly into LINE OA & WhatsApp Leads</span>
+            <span data-i18n="libot.title1">Seamlessly Unifying</span><br>
+            <span class="gradient-accent" data-i18n="libot.title2">Customer Acquisition & LTV Retention via LIBOT</span>
           </h2>
           <p class="libot-desc" data-i18n="libot.desc">
-            Getting cited in ChatGPT is only half the battle. Through <strong>LIBOT</strong> — Libralytics' proprietary intelligent bot bridge — incoming enquiries from AI recommendations are automatically formatted and routed straight to your company's official <strong>LINE OA, WhatsApp, or CRM email</strong>.
+            After AISEEN helps customers find your business and drives store visits, LIBOT converts these visitors into LINE friends to drive repeat visits and referrals. Only when both the entry point (AISEEN) and the retention platform (LIBOT) work together is customer acquisition truly complete.
           </p>
+
+          <!-- Slide 22 Real Case Study Callout -->
+          <div style="background: rgba(6, 199, 85, 0.08); border: 1px solid rgba(6, 199, 85, 0.25); border-radius: var(--radius-md); padding: 14px 18px; margin: 20px 0; font-size: 0.8125rem; color: #172e24;">
+            <strong style="color: #06c755; display: block; margin-bottom: 4px; font-family: var(--font-heading);">
+              ✦ Slide 22 Verified Case Study
+            </strong>
+            <span>Beauty Clinic LINE friends grew from <strong>200 to 4,100+</strong>, generating over <strong>¥16M+ (~฿4M+)</strong> in direct consultation revenue through automated AI lead routing and repeat broadcast retention.</span>
+          </div>
 
           <div class="libot-channels-row">
             <div class="channel-pill line">
@@ -1273,43 +1509,36 @@ location ~* /\.(env|git|htaccess|docker|aws) {
           <a href="#enquiry-builder" class="btn btn-primary" data-i18n="libot.tryBuilder">Launch Enquiry Builder Demo →</a>
         </div>
 
-        <!-- Visual Flow Steps -->
+        <!-- Slide 22 Funnel Steps -->
         <div class="libot-visual-card">
           <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between;">
-            <span>Automated Lead Pipeline</span>
+            <span>3-Stage Funnel Architecture</span>
             <span style="font-size: 0.75rem; color: var(--accent-emerald); font-family: var(--font-mono);">LIBOT v4.2 Active</span>
           </div>
 
           <div class="flow-step">
-            <div class="flow-step-icon">1</div>
+            <div class="flow-step-icon">01</div>
             <div class="flow-step-info">
-              <h5>Customer Consults AI</h5>
-              <p>Client asks ChatGPT or Perplexity for reputable services in Thailand (Hospitality, Clinic, Legal, Tech).</p>
-            </div>
-          </div>
-
-          <div class="flow-step">
-            <div class="flow-step-icon">2</div>
-            <div class="flow-step-info">
-              <h5>AI Cites Your Brand</h5>
-              <p>Due to your high GEO & llms.txt index, the AI recommends your business with verified credentials.</p>
-            </div>
-          </div>
-
-          <div class="flow-step">
-            <div class="flow-step-icon">3</div>
-            <div class="flow-step-info">
-              <h5>Interactive Enquiry Form</h5>
-              <p>Visitor lands on your site and uses the AISeen interactive builder to specify requirements.</p>
+              <h5>01 AISEEN: Discovered by AI</h5>
+              <p>New acquisition entrance: customers asking ChatGPT, Gemini, or Google Maps find your verified business.</p>
             </div>
           </div>
 
           <div class="flow-step active">
-            <div class="flow-step-icon">✓</div>
+            <div class="flow-step-icon">02</div>
             <div class="flow-step-info">
-              <h5>Instant LINE OA Notification</h5>
-              <p>LIBOT dispatches a structured enquiry message directly to your sales team's LINE OA or WhatsApp within 1.2s.</p>
+              <h5>02 LIBOT: LINE Friending</h5>
+              <p>Converting visitors to business assets: automatic 1-click LINE friending captures lead contact data forever.</p>
             </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-icon">03</div>
+            <div class="flow-step-info">
+              <h5>03 Referral Growth</h5>
+              <p>Word-of-mouth & broadcast retention: automated personalized prompts encourage satisfied clients to refer friends.</p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -1469,130 +1698,258 @@ location ~* /\.(env|git|htaccess|docker|aws) {
     </div>
   </section>
 
-  <!-- Section: Pricing -->
-  <section class="section" id="pricing">
+  <!-- Section: The Decisive Choice & Implementation Roadmap (Deck Aligned: Slides 19-21) -->
+  <section class="section" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="badge-tag">
+        <span class="badge-tag emerald">
           <span class="badge-pulse"></span>
-          <span data-i18n="pricing.badge">Transparent Pricing</span>
+          <span data-i18n="contact.badge">Window of Opportunity · First-Mover Advantage</span>
         </span>
-        <h2 class="section-title" data-i18n="pricing.title">Simple, Predictable Plans</h2>
-        <p class="section-desc" data-i18n="pricing.desc">
-          Semrush costs $139/mo. Ahrefs costs $129/mo. AISeen gives you full traditional SEO + 9 AI Engines + OWASP Security at a fraction of the cost.
+        <h2 class="section-title" data-i18n="contact.title">The Decisive Choice for Local Businesses</h2>
+        <p class="section-desc" data-i18n="contact.desc">
+          Almost no local businesses have adopted AI Optimization (AIO) yet. By acting today, you can secure your position as an "AI-preferred business" ahead of competitors before AI search becomes the universal standard.
         </p>
       </div>
 
-      <!-- Competitor Comparison Strike Row (Reference CI) -->
-      <div class="pricing-strike-row">
-        <span class="strike-item">Semrush $120/mo</span>
-        <span class="strike-sep">·</span>
-        <span class="strike-item">Ahrefs $99/mo</span>
-        <span class="strike-sep">·</span>
-        <span class="strike-highlight">AISeen — fraction of the price + Security + AI visibility</span>
-      </div>
+      <!-- Slide 20: The Decisive Choice (Two Paths) -->
+      <div class="choice-grid">
+        <!-- Choice 1: Invest in AI Visibility -->
+        <div class="choice-card invest">
+          <div class="choice-top-badge">
+            <span>✓ Recommended Path</span>
+          </div>
+          <h3 class="choice-title" style="color: #172e24;">A Store Discovered by AI</h3>
+          <p class="choice-desc">
+            Ensure search engines and conversational AI assistants index your store accurately, placing you at the forefront of recommendations.
+          </p>
+          <ul class="choice-points">
+            <li>
+              <span class="check-green">✓</span>
+              <span><strong>Google Maps & GBP Optimization:</strong> Complete profile audit, photos, categories, and keyword alignment.</span>
+            </li>
+            <li>
+              <span class="check-green">✓</span>
+              <span><strong>Multi-Engine AI Indexing:</strong> Structured knowledge for ChatGPT, Gemini, Perplexity, and Apple Maps.</span>
+            </li>
+            <li>
+              <span class="check-green">✓</span>
+              <span><strong>Automated 100+ Platform Sync:</strong> Continuous NAP unification across directories, map apps, and voice assistants.</span>
+            </li>
+            <li>
+              <span class="check-green">✓</span>
+              <span><strong>LIBOT Customer Retention:</strong> High-intent AI search leads convert directly into LINE OA followers.</span>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Billing Cycle Toggle (Monthly vs Annual with 20% discount) -->
-      <div class="pricing-controls">
-        <div class="billing-toggle-wrap">
-          <button class="billing-btn active" id="btnBillMonthly" onclick="setBilling('monthly')">Monthly</button>
-          <button class="billing-btn" id="btnBillAnnual" onclick="setBilling('annual')">
-            Annual <span class="discount-badge">-20% OFF</span>
-          </button>
+        <!-- Choice 2: Remain Invisible to AI -->
+        <div class="choice-card invisible">
+          <div class="choice-top-badge">
+            <span>✕ High Risk Scenario</span>
+          </div>
+          <h3 class="choice-title" style="color: #64748b;">A Store That Doesn't Exist to AI</h3>
+          <p class="choice-desc">
+            Do nothing and miss out on the shifting paradigm, leaving your business completely hidden from conversational search queries.
+          </p>
+          <ul class="choice-points">
+            <li>
+              <span class="cross-gray">✕</span>
+              <span><strong>Excluded from AI Answers:</strong> When potential clients ask AI for recommendations, your competitors appear while you are left out.</span>
+            </li>
+            <li>
+              <span class="cross-gray">✕</span>
+              <span><strong>Continuous Opportunity Loss:</strong> No matter how much you spend on ads or coupons, omitted businesses cannot recover lost searchers.</span>
+            </li>
+            <li>
+              <span class="cross-gray">✕</span>
+              <span><strong>Fragmented Online Data:</strong> Mismatched phone numbers and address syntax cause AI to withhold recommendation.</span>
+            </li>
+            <li>
+              <span class="cross-gray">✕</span>
+              <span><strong>Late-Mover Penalty:</strong> Competitors establishing early citation authority will build an insurmountable lead within 6 months.</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="pricing-grid">
-        <!-- Free Plan -->
-        <div class="pricing-card">
-          <div>
-            <h3 class="plan-name">Free</h3>
-            <p class="plan-desc">For indie founders & individual website audits.</p>
-            <div class="plan-price-wrap">
-              <span class="plan-currency" id="curFree">$</span>
-              <span class="plan-amount" id="amtFree">0</span>
-              <span class="plan-period">/ forever</span>
-            </div>
-            <ul class="plan-features-list">
-              <li><span class="plan-check">✓</span> 1 Website audit</li>
-              <li><span class="plan-check">✓</span> SEO Score (60+ checks)</li>
-              <li><span class="plan-check">✓</span> GEO Score (9 AI Engines)</li>
-              <li><span class="plan-check">✓</span> OWASP Security headers check</li>
-              <li><span class="plan-check">✓</span> Vibe Coding SEO audit</li>
-              <li class="disabled">✕ Daily automated scans</li>
-              <li class="disabled">✕ LIBOT LINE OA webhook alerts</li>
-            </ul>
-          </div>
-          <a href="#live-audit" class="btn btn-secondary w-full" data-i18n="pricing.btnFree">Start Free Audit</a>
+      <!-- Slide 21: Implementation & Onboarding Roadmap -->
+      <div style="margin-top: 56px;">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <span class="badge-tag">
+            <span>Slide 21 Execution Framework</span>
+          </span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #172e24; margin-top: 8px;">
+            Implementation & Onboarding Roadmap
+          </h3>
+          <p style="font-size: 0.875rem; color: var(--text-dim); max-width: 650px; margin: 4px auto 0;">
+            All complex configurations and directory submissions are fully handled by AISEEN. All that is required from your team is a simple final verification.
+          </p>
         </div>
 
-        <!-- Starter Plan -->
-        <div class="pricing-card">
-          <div>
-            <h3 class="plan-name">Starter</h3>
-            <p class="plan-desc">For local Thai businesses & growing brands.</p>
-            <div class="plan-price-wrap">
-              <span class="plan-currency" id="curStarter">$</span>
-              <span class="plan-amount" id="amtStarter">9</span>
-              <span class="plan-period" id="perStarter">/ month</span>
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <div>
+              <div class="roadmap-num">01</div>
+              <h4 class="roadmap-title">Service Application & Consultation</h4>
+              <p class="roadmap-desc">We review your location footprint, target audience, and primary service keywords to configure your visibility scope.</p>
             </div>
-            <ul class="plan-features-list">
-              <li><span class="plan-check">✓</span> 3 Website audits</li>
-              <li><span class="plan-check">✓</span> Daily automated crawls</li>
-              <li><span class="plan-check">✓</span> 20 AI Code fixes/month</li>
-              <li><span class="plan-check">✓</span> Pentest defense & path scans</li>
-              <li><span class="plan-check">✓</span> Thai PDPA & GDPR audit</li>
-              <li><span class="plan-check">✓</span> Standard email support</li>
-              <li class="disabled">✕ LIBOT custom LLM integrations</li>
-            </ul>
+            <div>
+              <span class="roadmap-owner">Actor: Client & AISEEN</span>
+            </div>
           </div>
-          <a href="#enquiry-builder" class="btn btn-secondary w-full" data-i18n="pricing.btnStarter">Get Starter</a>
+
+          <div class="roadmap-card">
+            <div>
+              <div class="roadmap-num">02</div>
+              <h4 class="roadmap-title">Business Info Audit & NAP Alignment</h4>
+              <p class="roadmap-desc">We collect and audit your store details (store name, photos, operating hours, coordinates, phone) to eliminate discrepancies.</p>
+            </div>
+            <div>
+              <span class="roadmap-owner">Actor: Client & AISEEN</span>
+            </div>
+          </div>
+
+          <div class="roadmap-card">
+            <div>
+              <div class="roadmap-num">03</div>
+              <h4 class="roadmap-title">GBP API Linkage & Integration</h4>
+              <p class="roadmap-desc">AISEEN engineers connect and optimize your Google Business Profile (GBP) as the verified Single Source of Truth.</p>
+            </div>
+            <div>
+              <span class="roadmap-owner">Actor: AISEEN Agency</span>
+            </div>
+          </div>
+
+          <div class="roadmap-card">
+            <div>
+              <div class="roadmap-num">04</div>
+              <h4 class="roadmap-title">Global Syndication & Continuous AIO Sync</h4>
+              <p class="roadmap-desc">Your verified profile is syndicated across 100+ global platforms and continuous AI search crawlers with zero ongoing effort.</p>
+            </div>
+            <div>
+              <span class="roadmap-owner">Actor: AISEEN Automated Sync</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Pro Plan (Most Popular) -->
-        <div class="pricing-card popular">
-          <div class="popular-ribbon">Most Popular in Thailand</div>
-          <div>
-            <h3 class="plan-name">Pro</h3>
-            <p class="plan-desc">Full AI visibility monitoring & team collaboration.</p>
-            <div class="plan-price-wrap">
-              <span class="plan-currency" id="curPro">$</span>
-              <span class="plan-amount" id="amtPro">29</span>
-              <span class="plan-period" id="perPro">/ month</span>
-            </div>
-            <ul class="plan-features-list">
-              <li><span class="plan-check">✓</span> 10 Website audits</li>
-              <li><span class="plan-check">✓</span> OWASP ZAP passive scan (150+ rules)</li>
-              <li><span class="plan-check">✓</span> Unlimited AI Code & llms.txt fixes</li>
-              <li><span class="plan-check">✓</span> AI Visibility Monitor & citation alerts</li>
-              <li><span class="plan-check">✓</span> <strong>LIBOT LINE OA & WhatsApp webhook</strong></li>
-              <li><span class="plan-check">✓</span> White-label PDF export</li>
-              <li><span class="plan-check">✓</span> Priority 24/7 Bangkok support</li>
-            </ul>
-          </div>
-          <a href="#enquiry-builder" class="btn btn-primary w-full" data-i18n="pricing.btnPro">Start 7-Day Trial</a>
-        </div>
+        <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 14px;">
+          *Platform Indexing Note: Following Step 4 distribution, propagation across third-party directories may take several weeks to a few months.
+        </p>
+      </div>
 
-        <!-- Enterprise / Agency Plan -->
-        <div class="pricing-card">
-          <div>
-            <h3 class="plan-name">Enterprise</h3>
-            <p class="plan-desc">For digital marketing agencies & conglomerates.</p>
-            <div class="plan-price-wrap">
-              <span class="plan-currency" id="curEnt">$</span>
-              <span class="plan-amount" id="amtEnt">99</span>
-              <span class="plan-period" id="perEnt">/ month</span>
-            </div>
-            <ul class="plan-features-list">
-              <li><span class="plan-check">✓</span> Unlimited Website audits</li>
-              <li><span class="plan-check">✓</span> Multi-tenant client portals</li>
-              <li><span class="plan-check">✓</span> Dedicated Libralytics AI engineer</li>
-              <li><span class="plan-check">✓</span> Custom LIBOT conversational models</li>
-              <li><span class="plan-check">✓</span> SLA 99.9% uptime guarantee</li>
-              <li><span class="plan-check">✓</span> On-premise / VPC deployment options</li>
-            </ul>
+      <!-- High-Converting Consultation & Contact Form (Zero Pricing, Pure Contact) -->
+      <div class="contact-consultation-wrap">
+        <div class="contact-layout">
+          <!-- Left Column: Form -->
+          <div class="contact-form-col">
+            <h3 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: #172e24; margin-bottom: 6px;">
+              Request Your AI Visibility Consultation
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--text-dim); margin-bottom: 24px;">
+              Speak directly with an AISEEN Thailand specialist. We will prepare an audit of your current Google Maps and AI search visibility.
+            </p>
+
+            <form id="consultationForm" onsubmit="handleConsultationSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="cfBusinessName">Business / Brand Name</label>
+                <input type="text" id="cfBusinessName" class="form-input" placeholder="e.g. Bangkok Longevity Center" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cfUrl">Website or Google Maps Profile URL</label>
+                <input type="text" id="cfUrl" class="form-input" placeholder="e.g. https://yourbusiness.co.th" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cfLocations">Number of Physical Store Locations</label>
+                <select id="cfLocations" class="form-input" style="height: 44px;">
+                  <option value="1 Store">1 Location (Single Store / Clinic / Restaurant)</option>
+                  <option value="2-5 Stores">2–5 Locations (Growing Local Brand)</option>
+                  <option value="6-20 Stores">6–20 Locations (Multi-District Chain)</option>
+                  <option value="20+ Stores">20+ Locations (Enterprise / Franchise)</option>
+                </select>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div class="form-group">
+                  <label class="form-label" for="cfContactName">Your Name</label>
+                  <input type="text" id="cfContactName" class="form-input" placeholder="Contact Person" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cfContactPhone">Phone / LINE ID</label>
+                  <input type="text" id="cfContactPhone" class="form-input" placeholder="+66 8X XXX XXXX" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cfEmail">Work Email</label>
+                <input type="email" id="cfEmail" class="form-input" placeholder="you@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cfNotes">Key Objectives or Questions (Optional)</label>
+                <textarea id="cfNotes" class="form-textarea" style="height: 75px;" placeholder="Tell us about your target districts or competitors..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full" style="padding: 14px 24px; font-size: 0.9375rem; font-weight: 700;">
+                Request Visibility Consultation & Audit Brief →
+              </button>
+            </form>
           </div>
-          <a href="#enquiry-builder" class="btn btn-secondary w-full" data-i18n="pricing.btnEnterprise">Contact Enterprise</a>
+
+          <!-- Right Column: Instant Channels & Credentials -->
+          <div class="contact-info-col">
+            <h3>Direct Reach & Partnerships</h3>
+            <p style="font-size: 0.875rem; color: var(--text-dim); line-height: 1.6;">
+              Prefer an immediate consultation? Connect with Libralytics Co., Ltd. via Thailand's most popular messaging platforms for same-day advisory.
+            </p>
+
+            <div class="contact-channels-list">
+              <!-- LINE OA -->
+              <a href="https://line.me" target="_blank" rel="noopener" class="contact-channel-card">
+                <div class="contact-channel-icon" style="background: rgba(6, 199, 85, 0.12); color: #06c755;">
+                  <span>●</span>
+                </div>
+                <div class="contact-channel-text">
+                  <strong style="color: #06c755;">LINE Official Account: @libralytics</strong>
+                  <span>Instant response in Thai & English · Dedicated account manager</span>
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://whatsapp.com" target="_blank" rel="noopener" class="contact-channel-card">
+                <div class="contact-channel-icon" style="background: rgba(37, 211, 102, 0.12); color: #25d366;">
+                  <span>●</span>
+                </div>
+                <div class="contact-channel-text">
+                  <strong style="color: #25d366;">WhatsApp Business Direct</strong>
+                  <span>Fast international consultation for regional brand directors</span>
+                </div>
+              </a>
+
+              <!-- Executive Email -->
+              <a href="mailto:consult@libralytics.com" class="contact-channel-card">
+                <div class="contact-channel-icon" style="background: rgba(57, 134, 72, 0.12); color: #398648;">
+                  <span>✉</span>
+                </div>
+                <div class="contact-channel-text">
+                  <strong>consult@libralytics.com</strong>
+                  <span>Formal RFP, NDAs, and enterprise multi-location proposals</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Corporate Credentials (Slides 2 & 3) -->
+            <div style="background: var(--bg-surface-2); border: 1px solid rgba(23, 46, 36, 0.08); border-radius: var(--radius-lg); padding: 20px; font-size: 0.8125rem; color: var(--text-dim); line-height: 1.6;">
+              <strong style="color: #172e24; display: block; margin-bottom: 6px; font-family: var(--font-heading);">
+                ✦ Corporate Overview & Technology Pedigree
+              </strong>
+              <div style="margin-bottom: 4px;"><strong>Technology Origin:</strong> AIBOT Inc. (Est. July 2020 · Tokyo Shinagawa East One Tower & Sendai Solala Plaza, Capital 10,000,000 JPY)</div>
+              <div style="margin-bottom: 4px;"><strong>Regional Partner:</strong> Libralytics Co., Ltd. (Bangkok, Thailand)</div>
+              <div><strong>Core Systems:</strong> AISEEN (Next-Gen MEO & AIO) and LIBOT (LINE Official Account enterprise automation)</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1615,50 +1972,70 @@ location ~* /\.(env|git|htaccess|docker|aws) {
       <div class="faq-grid">
         <details class="faq-item" open>
           <summary class="faq-question">
-            <span data-i18n="faq.q1">What is GEO (Generative Engine Optimization) and why is it critical?</span>
+            <span data-i18n="faq.q1">Q1. How does AISEEN differ from standard MEO/AIO services?</span>
             <span class="faq-icon-toggle">+</span>
           </summary>
           <div class="faq-answer" data-i18n="faq.a1">
-            GEO is the discipline of optimizing your digital presence so AI engines (ChatGPT, Perplexity, Gemini, Claude, Grok) understand your offerings and directly cite your business when responding to user queries. Traditional SEO ranks keywords in blue links; GEO makes your company the recommended source in synthesized answers.
+            Standard MEO services typically target Google Maps alone with manual management, while conventional AIO consulting is fragmented and expensive. AISEEN unifies both traditional MEO and conversational AI search optimization into a single automated solution, using your Google Business Profile (GBP) as the single source of truth across 100+ global platforms.
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span data-i18n="faq.q2">How does LIBOT integrate with our Thailand LINE Official Account?</span>
+            <span data-i18n="faq.q2">Q2. Why is system automation necessary instead of manual updates?</span>
             <span class="faq-icon-toggle">+</span>
           </summary>
           <div class="faq-answer" data-i18n="faq.a2">
-            LIBOT acts as an intelligent conversational middleware developed by Libralytics Co., Ltd. When visitors generate an audit or enquiry on your site, LIBOT packages the data and routes it directly to your verified LINE OA or WhatsApp channel. It can also be paired with automated 24/7 AI agents that answer Thai and English inquiries in real-time.
+            Continuously updating 100+ platforms manually is virtually impossible. Furthermore, as AI recommendation algorithms evolve constantly, having a dedicated automated infrastructure is essential to maintain absolute NAP consistency and keep store hours, photos, and attributes perfectly synchronized.
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span data-i18n="faq.q3">Is scanning our site safe and does it affect server load?</span>
+            <span data-i18n="faq.q3">Q3. How soon can we expect to see measurable results?</span>
             <span class="faq-icon-toggle">+</span>
           </summary>
           <div class="faq-answer" data-i18n="faq.a3">
-            Yes, completely safe. AISeen strictly performs non-intrusive public crawl simulations identical to how search engine bots inspect your site. We never request private credentials, modify database records, or inject invasive payloads.
+            While 100% guarantees cannot be made, many clients experience tangible results as early as 2 weeks, with highly competitive metropolitan districts typically seeing measurable impact and increased AI citations within 6 months.
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span data-i18n="faq.q4">What is Vibe Coding SEO and why do AI-created sites fail?</span>
+            <span data-i18n="faq.q4">Q4. How much operational workload is required from our team?</span>
             <span class="faq-icon-toggle">+</span>
           </summary>
           <div class="faq-answer" data-i18n="faq.a4">
-            Websites generated through AI prompts (vibe coding) often look fantastic visually but carry architectural flaws: client-only rendering shells that search bots read as blank, trailing slash duplication, missing canonical URLs, and massive JavaScript payloads. AISeen automatically pinpoints and provides drop-in code fixes for these issues.
+            AISEEN provides full hands-on agency support for all integration, directory linkage, and technical setup tasks. Your operational workload is virtually zero, though regular Google Business Profile updates (e.g. fresh photos and seasonal specials) help accelerate results.
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span data-i18n="faq.q5">Does AISeen support Thailand's Personal Data Protection Act (PDPA)?</span>
+            <span data-i18n="faq.q5">How does LIBOT integrate with our Thailand LINE Official Account?</span>
             <span class="faq-icon-toggle">+</span>
           </summary>
           <div class="faq-answer" data-i18n="faq.a5">
+            LIBOT acts as an intelligent conversational middleware developed by Libralytics Co., Ltd. and AIBOT Inc. When visitors discover your store or generate an enquiry, LIBOT automatically converts visitors into LINE friends to drive repeat visits, retention broadcasts, and customer referrals.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span data-i18n="faq.q6">Is scanning our site safe and does it affect server load?</span>
+            <span class="faq-icon-toggle">+</span>
+          </summary>
+          <div class="faq-answer" data-i18n="faq.a6">
+            Yes, completely safe. AISEEN strictly performs non-intrusive public crawl simulations identical to how search engine bots inspect your site. We never request private credentials, modify database records, or inject invasive payloads.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span data-i18n="faq.q7">Does AISEEN support Thailand's Personal Data Protection Act (PDPA)?</span>
+            <span class="faq-icon-toggle">+</span>
+          </summary>
+          <div class="faq-answer" data-i18n="faq.a7">
             Yes. Our Consent & Privacy module verifies that your cookie banners comply with Thailand PDPA requirements, ensuring trackers are withheld until explicit consent is obtained and that a clear "Reject All" button is provided without dark patterns.
           </div>
         </details>
@@ -1672,11 +2049,11 @@ location ~* /\.(env|git|htaccess|docker|aws) {
       <div class="cta-banner">
         <h2 data-i18n="cta.title">Make Your Business Seen Everywhere</h2>
         <p data-i18n="cta.desc">
-          Join leading Thailand businesses leveraging AISeen and Libralytics to capture high-value AI search traffic. Run your first comprehensive audit in 30 seconds.
+          Join leading Thailand businesses leveraging AISEEN and Libralytics to capture high-value AI search traffic. Schedule your visibility consultation today.
         </p>
         <div class="cta-actions">
-          <a href="#hero" class="btn btn-primary btn-lg" data-i18n="cta.btnAudit">Run Free 30s Audit →</a>
-          <a href="#enquiry-builder" class="btn btn-secondary btn-lg" data-i18n="cta.btnLibot">Contact Libralytics on LINE</a>
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="cta.btnAudit">Request Visibility Brief →</a>
+          <a href="https://line.me" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="cta.btnLibot">Connect on LINE OA (@libralytics)</a>
         </div>
       </div>
     </div>
@@ -1696,10 +2073,10 @@ location ~* /\.(env|git|htaccess|docker|aws) {
             </div>
           </a>
           <p>
-            The next-generation AI SEO, GEO visibility and cybersecurity audit platform for Thailand and international enterprises. Engineered by Libralytics Co., Ltd.
+            Next-Generation MEO (Map Engine Optimization) and AIO System. Built for AI search on ChatGPT, Gemini, and Google Maps. Developed by AIBOT Inc. & Libralytics Co., Ltd.
           </p>
           <div style="margin-top: 14px; font-size: 0.8125rem; color: var(--text-dim);">
-            Bangkok, Thailand · support@libralytics.com
+            Bangkok, Thailand · Tokyo, Japan · support@libralytics.com
           </div>
         </div>
 
@@ -1707,10 +2084,10 @@ location ~* /\.(env|git|htaccess|docker|aws) {
           <h4 class="footer-heading">Platform</h4>
           <ul class="footer-nav">
             <li><a href="#live-audit">Live Audit Tool</a></li>
-            <li><a href="#geo-vs-seo">GEO vs Google SEO</a></li>
+            <li><a href="#geo-vs-seo">MEO vs AI AIO</a></li>
+            <li><a href="#nap-consistency">NAP Consistency</a></li>
             <li><a href="#dimensions">8 Health Dimensions</a></li>
-            <li><a href="#dimensions">Vibe Coding SEO</a></li>
-            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
