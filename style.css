@@ -347,7 +347,7 @@ body {
 }
 
 .brand-seen {
-  color: #34d399; /* authentic forest/emerald green from reference screenshot */
+  color: #3ec879; /* authentic emerald/forest green from reference screenshot */
   font-weight: 800;
   margin-left: 0.5px;
 }
@@ -356,7 +356,7 @@ body {
   font-family: var(--font-heading);
   font-size: 0.5625rem;
   font-weight: 800;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.28em;
   color: #94a3b8;
   text-transform: uppercase;
   margin-top: 3px;
