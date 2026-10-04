@@ -27,7 +27,17 @@ const translations = {
     'nav.builder': 'Enquiry Builder',
     'nav.pricing': 'Pricing',
     'nav.faq': 'FAQ',
-    'nav.cta': 'Contact via LIBOT',
+    'nav.cta': 'Let’s talk visibility',
+    'hero.eyebrow': 'LOCAL DISCOVERY. REIMAGINED.',
+    'hero.refH1a': 'Great business.',
+    'hero.refH1b': 'Let’s make sure',
+    'hero.refH1c1': 'you’re',
+    'hero.refH1c2': 'seen.',
+    'hero.refSubStrong': 'On maps. In search. In the AI conversation.',
+    'hero.refSub': 'Bring your business information together, so more customers can find their way to you.',
+    'hero.refCta': 'Build my visibility brief',
+    'hero.refMeet': 'Meet AISEEN',
+    'hero.refNote': 'MEO + AI optimization. One connected approach.',
     'hero.pill': 'SEO + GEO + Vibe + Security + Privacy — all in one',
     'hero.title1': 'Is your site',
     'hero.title2': 'invisible',
@@ -120,7 +130,7 @@ const translations = {
     'nav.how': 'How It Works',
     'audit.exportBtn': 'Export Report',
     'audit.shareBtn': 'Share',
-    'geo.clickHint': '⚡ Click any engine below to inspect user-agent parameters, crawl IP blocks, and test simulated Bangkok queries:',
+    'geo.clickHint': 'Click any engine below to inspect user-agent parameters, crawl IP blocks, and test simulated Bangkok queries:',
     'code.desc': 'Select a verified code fix below to drop directly into your server or CMS for instant AI visibility, OWASP hardening, and PDPA compliance:',
     'how.badge': 'Proven 3-Step Methodology',
     'how.title': 'From URL to Fix in 3 Steps',
@@ -158,7 +168,17 @@ const translations = {
     'nav.builder': 'สร้างข้อความติดต่อ',
     'nav.pricing': 'ราคาแพ็กเกจ',
     'nav.faq': 'คำถามที่พบบ่อย',
-    'nav.cta': 'ติดต่อผ่าน LIBOT',
+    'nav.cta': 'ปรึกษาการมองเห็นของแบรนด์',
+    'hero.eyebrow': 'การค้นหาในท้องถิ่น ในมิติใหม่',
+    'hero.refH1a': 'ธุรกิจที่ยอดเยี่ยม',
+    'hero.refH1b': 'ให้เราช่วยให้',
+    'hero.refH1c1': 'ทุกคน',
+    'hero.refH1c2': 'มองเห็นคุณ',
+    'hero.refSubStrong': 'ทั้งบนแผนที่ บนการค้นหา และในการสนทนาของ AI',
+    'hero.refSub': 'รวมข้อมูลธุรกิจของคุณเข้าด้วยกัน เพื่อให้ลูกค้าค้นพบคุณได้ง่ายขึ้น',
+    'hero.refCta': 'สร้างรายงานการมองเห็น',
+    'hero.refMeet': 'รู้จัก AISEEN',
+    'hero.refNote': 'MEO + การเพิ่มประสิทธิภาพ AI ในหนึ่งเดียว',
     'hero.pill': 'SEO + GEO + Vibe + Security + Privacy — ครบจบในที่เดียว',
     'hero.title1': 'เว็บไซต์ของคุณ',
     'hero.title2': 'มองไม่เห็น',
@@ -251,7 +271,7 @@ const translations = {
     'nav.how': 'ขั้นตอนการทำงาน',
     'audit.exportBtn': 'ส่งออกรายงาน',
     'audit.shareBtn': 'แชร์ผลตรวจ',
-    'geo.clickHint': '⚡ คลิกที่ระบบ AI ด้านล่างเพื่อดูรายละเอียด User-Agent การตั้งค่า Robots.txt และทดสอบคำค้นหาในไทย:',
+    'geo.clickHint': 'คลิกที่ระบบ AI ด้านล่างเพื่อดูรายละเอียด User-Agent การตั้งค่า Robots.txt และทดสอบคำค้นหาในไทย:',
     'code.desc': 'เลือกโค้ดแก้ไขสำเร็จรูปด้านล่างเพื่อนำไปติดตั้งบนเซิร์ฟเวอร์หรือ CMS ของคุณได้ทันที รองรับทั้ง AI Search, OWASP และ PDPA:',
     'how.badge': '3 ขั้นตอนมาตรฐานระดับสากล',
     'how.title': 'จากระบุ URL สู่การแก้ไขใน 3 ขั้นตอน',
@@ -711,20 +731,20 @@ window.updateEnquiryPreview = function() {
   const timestamp = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 
   if (channel === 'line') {
-    msg = `🟢 [AISEEN Thailand · LIBOT Enquiry]
-📅 Date: ${timestamp}
-🏢 Domain: https://${domain}
-👤 Contact: ${contact}
-🎯 Requested Service: ${service}
+    msg = `[AISEEN Thailand · LIBOT Enquiry]
+Date: ${timestamp}
+Domain: https://${domain}
+Contact: ${contact}
+Requested Service: ${service}
 
-📝 Details & Requirements:
+Details & Requirements:
 "${notes}"
 
-🔗 Generated via AISeen Thailand by Libralytics
-⚡ Ready for LINE OA specialist follow-up`;
+Generated via AISeen Thailand by Libralytics
+Ready for LINE OA specialist follow-up`;
   } else if (channel === 'whatsapp') {
     msg = `*AISEEN Thailand · Business Enquiry*
-━━━━━━━━━━━━━━━━━━
+----------------------------------
 • *Domain:* https://${domain}
 • *Contact:* ${contact}
 • *Service:* ${service}
@@ -923,7 +943,7 @@ window.toggleBuilderHelp = function() {
 
   const isOpen = panel.classList.toggle('open');
   if (chevron) {
-    chevron.textContent = isOpen ? '▴' : '▾';
+    chevron.textContent = isOpen ? '▲' : '▼';
   }
 };
 
@@ -988,7 +1008,7 @@ window.copyExecutiveSummary = function() {
 window.forwardReportToLine = function() {
   const target = state.auditTarget;
   const geo = document.getElementById('numGeo')?.textContent || '92';
-  const msg = `📊 [AISEEN Audit Report] https://${target}
+  const msg = `[AISEEN Audit Report] https://${target}
 • GEO Score: ${geo}%
 • SEO: Passed 56/60 checks
 • Security: OWASP Grade A+

@@ -118,7 +118,7 @@
           <button class="switch-btn" id="btnCurrTHB">฿</button>
         </div>
 
-        <a href="#enquiry-builder" class="btn btn-primary btn-sm" data-i18n="nav.cta">Contact via LIBOT</a>
+        <a href="#enquiry-builder" class="btn btn-primary btn-sm" data-i18n="nav.cta">Let’s talk visibility</a>
 
         <!-- Mobile Nav Toggle -->
         <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
@@ -130,67 +130,137 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Aligned to authentic AISEEN Thailand reference CI) -->
   <section class="hero" id="hero">
-    <div class="container hero-content">
-      <div class="hero-pill">
-        <span class="pulse-dot"></span>
-        <span data-i18n="hero.pill">SEO + GEO + Vibe + Security + Privacy — all in one</span>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Column: Copy & Value Proposition -->
+        <div class="hero-copy-col">
+          <div class="hero-eyebrow anim-badge">
+            <span class="hero-eyebrow-line"></span>
+            <span data-i18n="hero.eyebrow">LOCAL DISCOVERY. REIMAGINED.</span>
+          </div>
+
+          <h1 class="hero-title anim-h1">
+            <span class="hero-title-main" data-i18n="hero.refH1a">Great business.</span>
+            <span class="hero-title-sub" data-i18n="hero.refH1b">Let’s make sure</span>
+            <span class="hero-title-highlight"><span data-i18n="hero.refH1c1">you’re</span> <span class="seen-highlight" data-i18n="hero.refH1c2">seen.</span></span>
+          </h1>
+
+          <p class="hero-subtitle anim-subtitle">
+            <strong data-i18n="hero.refSubStrong">On maps. In search. In the AI conversation.</strong>
+            <span data-i18n="hero.refSub">Bring your business information together, so more customers can find their way to you.</span>
+          </p>
+
+          <div class="hero-actions-row anim-form">
+            <a href="#heroAuditForm" class="btn-hero-dark" data-i18n="hero.refCta">Build my visibility brief</a>
+            <a href="#how-it-works" class="link-hero-meet" data-i18n="hero.refMeet">Meet AISEEN</a>
+          </div>
+
+          <p class="hero-footer-note" data-i18n="hero.refNote">MEO + AI optimization. One connected approach.</p>
+        </div>
+
+        <!-- Right Column: Interactive Diagram Card matching reference screenshot -->
+        <div class="hero-visual-col anim-stat">
+          <div class="hero-ref-card">
+            <div class="ref-header-row">
+              <span class="ref-badge-from">FROM ONE BUSINESS PROFILE</span>
+              <span class="ref-asterisk-icon">✳</span>
+            </div>
+
+            <!-- Search simulation pill -->
+            <div class="ref-search-pill">
+              <span class="ref-search-icon">⌕</span>
+              <span class="ref-search-text">"Where's a good café in Phuket?"</span>
+            </div>
+
+            <!-- Profile Info Card -->
+            <div class="ref-profile-card">
+              <div class="ref-profile-avatar">B</div>
+              <div class="ref-profile-text">
+                <div class="ref-profile-title">Your business, clearly understood.</div>
+                <div class="ref-profile-desc">Name. Address. Hours. All aligned.</div>
+              </div>
+              <div class="ref-profile-badge">✓</div>
+            </div>
+
+            <!-- Vertical Connector Line -->
+            <div class="ref-tree-line-v"></div>
+
+            <!-- AISEEN Central Node -->
+            <div class="ref-center-hub">
+              <div class="ref-hub-title">AISEEN</div>
+              <div class="ref-hub-subtitle">One source. Consistent information.</div>
+            </div>
+
+            <!-- Branching Connector Line -->
+            <div class="ref-tree-line-v"></div>
+
+            <!-- 3 Destination Cards -->
+            <div class="ref-dest-row">
+              <div class="ref-dest-card">
+                <div class="ref-dest-icon">⌖</div>
+                <div class="ref-dest-title">Maps</div>
+                <div class="ref-dest-sub">Local discovery</div>
+              </div>
+              <div class="ref-dest-card active">
+                <div class="ref-dest-icon">✳</div>
+                <div class="ref-dest-title">AI search</div>
+                <div class="ref-dest-sub">New conversations</div>
+              </div>
+              <div class="ref-dest-card">
+                <div class="ref-dest-icon">◎</div>
+                <div class="ref-dest-title">Directories</div>
+                <div class="ref-dest-sub">Wider presence</div>
+              </div>
+            </div>
+
+            <!-- Diagram Footer -->
+            <div class="ref-card-footer">
+              <span class="ref-footer-left">ONE CONNECTED PRESENCE</span>
+              <span class="ref-footer-right">100+ platforms*</span>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <h1 class="hero-title anim-h1">
-        <span class="title-line-1" data-i18n="hero.title1">Is your site</span>
-        <span class="title-line-2" data-i18n="hero.title2">invisible</span>
-        <span class="title-line-rotator" id="heroRotator">to ChatGPT?</span>
-      </h1>
-
-      <p class="hero-sub-badges anim-badge">
-        <span class="sub-badge-item"><span class="dot-indigo">◆</span><span>by <span class="sub-badge-target">Google</span></span></span>
-        <span class="sub-badge-sep">·</span>
-        <span class="sub-badge-item"><span class="dot-emerald">◆</span><span>by <span class="sub-badge-target">AI search</span></span></span>
-        <span class="sub-badge-sep">·</span>
-        <span class="sub-badge-item"><span class="dot-rose">◆</span><span>by <span class="sub-badge-target">security scanners</span></span></span>
-      </p>
-
-      <p class="hero-subtitle anim-subtitle" data-i18n="hero.subtitle">
-        While competitors optimize for Google — their AI search traffic grows. Check SEO, AI Search Health, <strong>Vibe Coding SEO</strong>, security and cookie consent in 30 seconds — free.
-      </p>
 
       <!-- Live Search / URL Audit Bar -->
-      <form class="audit-search-box anim-form" id="heroAuditForm" onsubmit="event.preventDefault(); runLiveAudit();">
-        <div class="audit-input-wrap">
-          <div class="audit-input-icon">
-            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
+      <div class="hero-audit-wrap" id="audit-bar-anchor">
+        <form class="audit-search-box anim-form" id="heroAuditForm" onsubmit="event.preventDefault(); runLiveAudit();">
+          <div class="audit-input-wrap">
+            <div class="audit-input-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+            <input type="text" class="audit-input" id="auditUrlInput" placeholder="yoursite.com" value="bangkok-wellness.co.th" required>
           </div>
-          <input type="text" class="audit-input" id="auditUrlInput" placeholder="yoursite.com" value="bangkok-wellness.co.th" required>
+          <button type="submit" class="btn-audit-cta" id="btnRunAudit" data-i18n="hero.auditBtn">
+            <span>Check →</span>
+          </button>
+        </form>
+
+        <p class="hero-micro-text">No credit card required · Free plan forever · Cancel anytime · LIBOT & LINE OA ready</p>
+
+        <!-- Quick Preset Suggestions -->
+        <div class="hero-quick-presets">
+          <span data-i18n="hero.presetsLabel">Try popular benchmarks:</span>
+          <button type="button" class="preset-chip" onclick="setAuditTarget('agoda.co.th')">agoda.co.th</button>
+          <button type="button" class="preset-chip" onclick="setAuditTarget('bumrungrad.com')">bumrungrad.com</button>
+          <button type="button" class="preset-chip" onclick="setAuditTarget('central.co.th')">central.co.th</button>
+          <button type="button" class="preset-chip" onclick="setAuditTarget('libralytics.com')">libralytics.com</button>
         </div>
-        <button type="submit" class="btn-audit-cta" id="btnRunAudit" data-i18n="hero.auditBtn">
-          <span>Check →</span>
-        </button>
-      </form>
 
-      <p class="hero-micro-text">No credit card required · Free plan forever · Cancel anytime · LIBOT & LINE OA ready</p>
-
-      <!-- Quick Preset Suggestions -->
-      <div class="hero-quick-presets">
-        <span data-i18n="hero.presetsLabel">Try popular benchmarks:</span>
-        <button type="button" class="preset-chip" onclick="setAuditTarget('agoda.co.th')">agoda.co.th</button>
-        <button type="button" class="preset-chip" onclick="setAuditTarget('bumrungrad.com')">bumrungrad.com</button>
-        <button type="button" class="preset-chip" onclick="setAuditTarget('central.co.th')">central.co.th</button>
-        <button type="button" class="preset-chip" onclick="setAuditTarget('libralytics.com')">libralytics.com</button>
-      </div>
-
-      <!-- Trust Badges Row -->
-      <div class="trust-badges-row anim-trust">
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.noSignup">No signup</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.engines">9 AI engines</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.security">OWASP 2025 + ZAP</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.vibe">Vibe Score</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.content">Content quality</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.timing">Results in 30s</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.gdpr">GDPR & Cookie check</span></div>
+        <!-- Trust Badges Row -->
+        <div class="trust-badges-row anim-trust">
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.noSignup">No signup</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.engines">9 AI engines</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.security">OWASP 2025 + ZAP</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.vibe">Vibe Score</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.content">Content quality</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.timing">Results in 30s</span></div>
+          <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.gdpr">GDPR & Cookie check</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -330,19 +400,19 @@
         <!-- Diagnostic Navigation Tabs -->
         <div class="audit-tabs-nav">
           <button class="audit-tab-btn active" onclick="switchAuditTab('tab-geo', this)">
-            <span>🤖</span> <span data-i18n="tab.geoEngines">AI Engines Visibility</span>
+            <span>✳</span> <span data-i18n="tab.geoEngines">AI Engines Visibility</span>
           </button>
           <button class="audit-tab-btn" onclick="switchAuditTab('tab-seo', this)">
-            <span>🔍</span> <span data-i18n="tab.technicalSeo">Technical SEO (60+)</span>
+            <span>⌕</span> <span data-i18n="tab.technicalSeo">Technical SEO (60+)</span>
           </button>
           <button class="audit-tab-btn" onclick="switchAuditTab('tab-sec', this)">
-            <span>🛡️</span> <span data-i18n="tab.security">OWASP & Pentest</span>
+            <span>◈</span> <span data-i18n="tab.security">OWASP & Pentest</span>
           </button>
           <button class="audit-tab-btn" onclick="switchAuditTab('tab-vibe', this)">
-            <span>⚡</span> <span data-i18n="tab.vibe">Vibe Coding Fixes</span>
+            <span>✦</span> <span data-i18n="tab.vibe">Vibe Coding Fixes</span>
           </button>
           <button class="audit-tab-btn" onclick="switchAuditTab('tab-code', this)">
-            <span>📋</span> <span data-i18n="tab.codeFixes">Instant Code Fixes</span>
+            <span>§</span> <span data-i18n="tab.codeFixes">Instant Code Fixes</span>
           </button>
         </div>
 
@@ -350,7 +420,7 @@
         <div class="tab-pane active" id="tab-geo">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
             <span style="font-size: 0.8125rem; color: var(--text-dim);" data-i18n="geo.clickHint">
-              ⚡ Click any engine below to inspect user-agent parameters, crawl IP blocks, and test simulated Bangkok queries:
+              Click any engine below to inspect user-agent parameters, crawl IP blocks, and test simulated Bangkok queries:
             </span>
             <span class="badge-tag cyan" style="margin: 0; font-size: 0.75rem;">Interactive Simulator</span>
           </div>
@@ -358,7 +428,7 @@
           <div class="ai-engines-grid">
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('chatgpt')" title="Click to inspect GPTBot parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">🟢</div>
+                <div class="ai-engine-avatar">●</div>
                 <div>
                   <div class="ai-engine-name">ChatGPT / OpenAI</div>
                   <div class="ai-engine-crawler">GPTBot · OAI-SearchBot</div>
@@ -368,7 +438,7 @@
             </div>
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('perplexity')" title="Click to inspect PerplexityBot parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">🔵</div>
+                <div class="ai-engine-avatar">●</div>
                 <div>
                   <div class="ai-engine-name">Perplexity AI</div>
                   <div class="ai-engine-crawler">PerplexityBot</div>
@@ -378,7 +448,7 @@
             </div>
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('gemini')" title="Click to inspect Google-Extended parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">🔴</div>
+                <div class="ai-engine-avatar">○</div>
                 <div>
                   <div class="ai-engine-name">Google Gemini & Overviews</div>
                   <div class="ai-engine-crawler">Google-Extended</div>
@@ -388,7 +458,7 @@
             </div>
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('claude')" title="Click to inspect ClaudeBot parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">🟣</div>
+                <div class="ai-engine-avatar">✳</div>
                 <div>
                   <div class="ai-engine-name">Anthropic Claude</div>
                   <div class="ai-engine-crawler">ClaudeBot</div>
@@ -398,7 +468,7 @@
             </div>
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('grok')" title="Click to inspect GrokBot parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">⚪</div>
+                <div class="ai-engine-avatar">◎</div>
                 <div>
                   <div class="ai-engine-name">xAI Grok</div>
                   <div class="ai-engine-crawler">GrokBot</div>
@@ -408,7 +478,7 @@
             </div>
             <div class="ai-engine-card clickable" onclick="inspectAiEngine('meta')" title="Click to inspect Meta-ExternalAgent parameters">
               <div class="ai-engine-info">
-                <div class="ai-engine-avatar">🟠</div>
+                <div class="ai-engine-avatar">◈</div>
                 <div>
                   <div class="ai-engine-name">Meta AI</div>
                   <div class="ai-engine-crawler">Meta-ExternalAgent</div>
@@ -556,16 +626,16 @@
           <!-- Sub-Tabs Navigation -->
           <div class="code-subtabs-nav">
             <button type="button" class="code-subtab-btn active" onclick="switchCodeSubtab('subtab-llms', this)">
-              <span>📄</span> <span>/llms.txt Standard</span>
+              <span>≡</span> <span>/llms.txt Standard</span>
             </button>
             <button type="button" class="code-subtab-btn" onclick="switchCodeSubtab('subtab-schema', this)">
-              <span>🌐</span> <span>JSON-LD Schema (Thai)</span>
+              <span>◎</span> <span>JSON-LD Schema (Thai)</span>
             </button>
             <button type="button" class="code-subtab-btn" onclick="switchCodeSubtab('subtab-owasp', this)">
-              <span>🛡️</span> <span>OWASP 2025 Headers</span>
+              <span>◈</span> <span>OWASP 2025 Headers</span>
             </button>
             <button type="button" class="code-subtab-btn" onclick="switchCodeSubtab('subtab-pdpa', this)">
-              <span>🍪</span> <span>PDPA Consent Blocker</span>
+              <span>◈</span> <span>PDPA Consent Blocker</span>
             </button>
           </div>
 
@@ -699,7 +769,7 @@ location ~* /\.(env|git|htaccess|docker|aws) {
         <!-- Card 1: Traditional Google SEO -->
         <div class="compare-card traditional">
           <div class="compare-header">
-            <div class="compare-icon">🔍</div>
+            <div class="compare-icon">⌕</div>
             <div>
               <div class="compare-title" data-i18n="geo.tradTitle">Traditional SEO</div>
               <div class="compare-subtitle">Google Blue Links Paradigm</div>
@@ -717,7 +787,7 @@ location ~* /\.(env|git|htaccess|docker|aws) {
         <!-- Card 2: Generative Engine Optimization (GEO) -->
         <div class="compare-card geo">
           <div class="compare-header">
-            <div class="compare-icon">🤖</div>
+            <div class="compare-icon">✳</div>
             <div>
               <div class="compare-title" data-i18n="geo.geoTitle">GEO (Generative Engine Optimization)</div>
               <div class="compare-subtitle">ChatGPT · Perplexity · Gemini · Claude</div>
@@ -864,7 +934,7 @@ location ~* /\.(env|git|htaccess|docker|aws) {
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">06</span>
-              <span class="dim-badge-ref">New 🆕</span>
+              <span class="dim-badge-ref">New ✦</span>
             </div>
             <h3 class="dim-title">Vibe Coding SEO</h3>
             <p class="dim-summary">6 Vibe Coding SEO checks — free</p>
@@ -927,70 +997,70 @@ location ~* /\.(env|git|htaccess|docker|aws) {
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">🤖</span>
+            <span style="font-size: 1.25rem;">✳</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">CSR Shell</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Googlebot sees empty page</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">🔀</span>
+            <span style="font-size: 1.25rem;">⇄</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Trailing slash</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Duplicate pages in Google</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">📍</span>
+            <span style="font-size: 1.25rem;">⌖</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Canonical tag</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Self-reference mismatch</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">📦</span>
+            <span style="font-size: 1.25rem;">◫</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">JS bundle weight</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&gt;12 scripts = slow crawl</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">🔗</span>
+            <span style="font-size: 1.25rem;">⚯</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">URL architecture</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&lt;3 crawlable links</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">📋</span>
+            <span style="font-size: 1.25rem;">≡</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">JSON-LD schema</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">No rich snippets possible</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">📝</span>
+            <span style="font-size: 1.25rem;">✎</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Thin content</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&lt;300 words = critical</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">🏗️</span>
+            <span style="font-size: 1.25rem;">▲</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">H1↔Title mismatch</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Keywords don't match</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">🍪</span>
+            <span style="font-size: 1.25rem;">◈</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Cookie consent</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">CMP, pre-consent trackers</p>
             </div>
           </div>
           <div class="quality-check-item">
-            <span style="font-size: 1.25rem;">⚠️</span>
+            <span style="font-size: 1.25rem;">▲</span>
             <div>
               <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Dark patterns</p>
               <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Hidden reject button</p>
@@ -1149,10 +1219,10 @@ location ~* /\.(env|git|htaccess|docker|aws) {
                 <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: #10b981;">// LIBOT LINE OA Notification</span>
                 <span style="font-size: 0.75rem; color: #64748b; font-family: var(--font-mono);">Just now</span>
               </div>
-              <div style="background: rgba(6, 199, 85, 0.08); border: 1px solid rgba(6, 199, 85, 0.25); border-radius: 8px; padding: 12px; font-size: 0.8125rem; color: #f8fafc; line-height: 1.6;">
-                <div>🟢 <strong>New Client Lead via ChatGPT Citation</strong></div>
-                <div style="font-size: 0.75rem; color: #94a3b8; margin: 4px 0;">Domain: bangkok-wellness.co.th</div>
-                <div style="font-size: 0.75rem; color: #cbd5e1;">"Patient booked Executive Longevity Consultation after recommendation in ChatGPT."</div>
+              <div style="background: rgba(6, 199, 85, 0.08); border: 1px solid rgba(6, 199, 85, 0.25); border-radius: 8px; padding: 12px; font-size: 0.8125rem; color: var(--text-main); line-height: 1.6;">
+                <div><span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #06c755; margin-right: 6px;"></span><strong>New Client Lead via ChatGPT Citation</strong></div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin: 4px 0;">Domain: bangkok-wellness.co.th</div>
+                <div style="font-size: 0.75rem; color: var(--text-sub);">"Patient booked Executive Longevity Consultation after recommendation in ChatGPT."</div>
                 <div style="margin-top: 8px; display: inline-block; background: #06c755; color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Delivered to LINE OA</div>
               </div>
             </div>
@@ -1264,7 +1334,7 @@ location ~* /\.(env|git|htaccess|docker|aws) {
         <!-- Collapsible Enquiry Builder Guide -->
         <div style="text-align: center; margin-bottom: 20px;">
           <button type="button" class="builder-help-toggle-btn" id="btnToggleBuilderHelp" onclick="toggleBuilderHelp()">
-            <span>💡</span>
+            <span>✦</span>
             <span data-i18n="builder.helpToggle">How Does Enquiry Delivery Work? View Guide & Specs</span>
             <span id="helpChevron">▾</span>
           </button>
@@ -1282,15 +1352,15 @@ location ~* /\.(env|git|htaccess|docker|aws) {
           </p>
           <div class="help-steps-grid">
             <div class="help-step-box">
-              <h5><span>1️⃣</span> <span data-i18n="builder.help1Title">Select & Customize</span></h5>
+              <h5><span>1.</span> <span data-i18n="builder.help1Title">Select & Customize</span></h5>
               <p data-i18n="builder.help1Desc">Choose your objective or click any of the 4 real-world Thailand business templates to auto-fill clinic, e-commerce, SaaS, or resort requirements.</p>
             </div>
             <div class="help-step-box">
-              <h5><span>2️⃣</span> <span data-i18n="builder.help2Title">Live Encoding</span></h5>
+              <h5><span>2.</span> <span data-i18n="builder.help2Title">Live Encoding</span></h5>
               <p data-i18n="builder.help2Desc">Real-time preview converts your inputs into structured text compatible with LINE OA rich cards, WhatsApp formatting (*bold*, lists), or RFC-compliant email.</p>
             </div>
             <div class="help-step-box">
-              <h5><span>3️⃣</span> <span data-i18n="builder.help3Title">Direct Hand-Off</span></h5>
+              <h5><span>3.</span> <span data-i18n="builder.help3Title">Direct Hand-Off</span></h5>
               <p data-i18n="builder.help3Desc">One-click deep link opens LINE OA (@libralytics) or WhatsApp directly on mobile/desktop without signup or intermediary data collection.</p>
             </div>
           </div>
@@ -1304,19 +1374,19 @@ location ~* /\.(env|git|htaccess|docker|aws) {
               <div class="services-radio-grid">
                 <label class="service-radio-card active" onclick="selectService('AI SEO & GEO Optimization', this)">
                   <input type="radio" name="service" checked>
-                  <span class="service-radio-title">🤖 AI SEO & GEO Audit</span>
+                  <span class="service-radio-title">✳ AI SEO & GEO Audit</span>
                 </label>
                 <label class="service-radio-card" onclick="selectService('OWASP Security Hardening', this)">
                   <input type="radio" name="service">
-                  <span class="service-radio-title">🛡️ Security Hardening</span>
+                  <span class="service-radio-title">◈ Security Hardening</span>
                 </label>
                 <label class="service-radio-card" onclick="selectService('Vibe Coding Fixes', this)">
                   <input type="radio" name="service">
-                  <span class="service-radio-title">⚡ Vibe Code Optimization</span>
+                  <span class="service-radio-title">✦ Vibe Code Optimization</span>
                 </label>
                 <label class="service-radio-card" onclick="selectService('LIBOT AI Agent Setup', this)">
                   <input type="radio" name="service">
-                  <span class="service-radio-title">💬 LIBOT LINE OA Setup</span>
+                  <span class="service-radio-title">● LIBOT LINE OA Setup</span>
                 </label>
               </div>
             </div>
@@ -1341,13 +1411,13 @@ location ~* /\.(env|git|htaccess|docker|aws) {
               <label class="form-label" data-i18n="form.channelLabel">5. Delivery Destination Channel</label>
               <div class="channel-selector-row">
                 <button type="button" class="channel-btn line-btn active" id="btnChanLine" onclick="selectChannel('line')">
-                  <span>🟢 LINE OA</span>
+                  <span>● LINE OA</span>
                 </button>
                 <button type="button" class="channel-btn wa-btn" id="btnChanWA" onclick="selectChannel('whatsapp')">
-                  <span>🟢 WhatsApp</span>
+                  <span>● WhatsApp</span>
                 </button>
                 <button type="button" class="channel-btn email-btn" id="btnChanEmail" onclick="selectChannel('email')">
-                  <span>✉️ Email</span>
+                  <span>✉ Email</span>
                 </button>
               </div>
             </div>
