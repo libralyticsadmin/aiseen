@@ -1,0 +1,14 @@
+{
+  "name": "aiseen-thailand",
+  "version": "1.0.0",
+  "description": "AISeen Thailand - Next-Gen AI SEO, GEO & Security Audit Tool by Libralytics with LIBOT Integration",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 5173",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
