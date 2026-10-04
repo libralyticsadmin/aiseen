@@ -28,17 +28,19 @@ const translations = {
     'nav.pricing': 'Pricing',
     'nav.faq': 'FAQ',
     'nav.cta': 'Contact via LIBOT',
-    'hero.pill': 'Powered by <strong>Libralytics</strong> · Engineered for Thailand & Global AI Search',
-    'hero.title1': 'Is Your Business',
-    'hero.title2': 'Invisible to ChatGPT?',
-    'hero.subtitle': 'While competitors fight over traditional Google blue links, customers in Bangkok and worldwide are asking <strong>ChatGPT, Perplexity & Gemini</strong>. Check your AI citation probability, technical SEO, OWASP security, and Thailand PDPA in 30 seconds.',
-    'hero.auditBtn': 'Run Free Audit',
+    'hero.pill': 'SEO + GEO + Vibe + Security + Privacy — all in one',
+    'hero.title1': 'Is your site',
+    'hero.title2': 'invisible',
+    'hero.subtitle': 'While competitors optimize for Google — their AI search traffic grows. Check SEO, AI Search Health, <strong>Vibe Coding SEO</strong>, security and cookie consent in 30 seconds — free.',
+    'hero.auditBtn': 'Check →',
     'hero.presetsLabel': 'Try popular benchmarks:',
-    'trust.noSignup': 'No signup required',
-    'trust.engines': '9 AI Engines (GPT-4o, Claude 3.7, Gemini)',
-    'trust.security': 'OWASP 2025 Headers',
-    'trust.vibe': 'Vibe Coding Flaws',
-    'trust.libot': 'LINE OA & LIBOT Ready',
+    'trust.noSignup': 'No signup',
+    'trust.engines': '9 AI engines',
+    'trust.security': 'OWASP 2025 + ZAP',
+    'trust.vibe': 'Vibe Score',
+    'trust.content': 'Content quality',
+    'trust.timing': 'Results in 30s',
+    'trust.gdpr': 'GDPR & Cookie check',
     'metric.engines': 'AI Engines',
     'metric.checks': 'SEO Checks',
     'metric.modules': 'Audit Modules',
@@ -157,17 +159,19 @@ const translations = {
     'nav.pricing': 'ราคาแพ็กเกจ',
     'nav.faq': 'คำถามที่พบบ่อย',
     'nav.cta': 'ติดต่อผ่าน LIBOT',
-    'hero.pill': 'พัฒนาโดย <strong>Libralytics</strong> · ออกแบบเฉพาะสำหรับธุรกิจไทยและระบบ AI Search สากล',
-    'hero.title1': 'ธุรกิจของคุณ',
-    'hero.title2': 'มองไม่เห็นใน ChatGPT หรือไม่?',
-    'hero.subtitle': 'ในขณะที่คู่แข่งยังแข่งแย่งอันดับลิงก์สีน้ำเงินใน Google ลูกค้าในกรุงเทพฯ และทั่วโลกกำลังถาม <strong>ChatGPT, Perplexity และ Gemini</strong> ตรวจสอบโอกาสการถูกอ้างอิงโดย AI, Technical SEO, ความปลอดภัย OWASP และ PDPA ของไทยได้ใน 30 วินาที',
-    'hero.auditBtn': 'เริ่มตรวจฟรีทันที',
+    'hero.pill': 'SEO + GEO + Vibe + Security + Privacy — ครบจบในที่เดียว',
+    'hero.title1': 'เว็บไซต์ของคุณ',
+    'hero.title2': 'มองไม่เห็น',
+    'hero.subtitle': 'ในขณะที่คู่แข่งมัวปรับแต่งเว็บเพื่อ Google — ทราฟฟิกจาก AI Search กลับเติบโตขึ้นทุกวัน ตรวจสอบ SEO, AI Search Health, <strong>Vibe Coding SEO</strong>, ความปลอดภัย และคุกกี้ได้ใน 30 วินาที — ฟรี',
+    'hero.auditBtn': 'ตรวจสอบ →',
     'hero.presetsLabel': 'ลองเว็บไซต์ตัวอย่าง:',
-    'trust.noSignup': 'ไม่ต้องลงทะเบียน',
-    'trust.engines': 'รองรับ 9 AI Engines (GPT-4o, Claude 3.7, Gemini)',
-    'trust.security': 'มาตรฐาน OWASP 2025',
-    'trust.vibe': 'ตรวจข้อผิดพลาด Vibe Coding',
-    'trust.libot': 'รองรับ LINE OA & LIBOT',
+    'trust.noSignup': 'ไม่ต้องสมัครสมาชิก',
+    'trust.engines': '9 ระบบ AI ค้นหา',
+    'trust.security': 'OWASP 2025 + ZAP',
+    'trust.vibe': 'คะแนน Vibe Score',
+    'trust.content': 'คุณภาพเนื้อหา',
+    'trust.timing': 'ผลลัพธ์ใน 30 วินาที',
+    'trust.gdpr': 'ตรวจสอบ GDPR & คุกกี้',
     'metric.engines': 'ระบบ AI ค้นหา',
     'metric.checks': 'จุดตรวจ SEO',
     'metric.modules': 'โมดูลการตรวจ',
@@ -325,9 +329,47 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initLanguageSelector();
   initCurrencySelector();
+  initHeroRotator();
   updateEnquiryPreview();
   renderPricing();
 });
+
+// --- Hero Rotating Text Engine (Reference CI) ---
+function initHeroRotator() {
+  const rotatorEl = document.getElementById('heroRotator');
+  if (!rotatorEl) return;
+
+  const engines = [
+    'to ChatGPT?',
+    'to Perplexity?',
+    'to Gemini?',
+    'to Claude?',
+    'to Google AI?'
+  ];
+
+  const enginesTh = [
+    'ใน ChatGPT?',
+    'ใน Perplexity?',
+    'ใน Gemini?',
+    'ใน Claude?',
+    'ใน Google AI?'
+  ];
+
+  let currentIndex = 0;
+
+  setInterval(() => {
+    rotatorEl.classList.add('fade-out');
+    rotatorEl.classList.remove('fade-in');
+
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % engines.length;
+      const list = state.lang === 'th' ? enginesTh : engines;
+      rotatorEl.textContent = list[currentIndex];
+      rotatorEl.classList.remove('fade-out');
+      rotatorEl.classList.add('fade-in');
+    }, 250);
+  }, 2400);
+}
 
 // --- Navigation & Scroll Effects ---
 function initNavbarScroll() {

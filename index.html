@@ -27,7 +27,7 @@
   <meta property="twitter:image" content="https://aiseen.th/og-preview.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><rect width='28' height='28' rx='7' fill='%236366f1'/><path d='M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z' stroke='white' stroke-width='1.5' fill='none'/><circle cx='14' cy='14' r='3.8' fill='white'/><circle cx='14' cy='14' r='2' fill='%234338ca'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='logo-bg' x1='0' y1='0' x2='28' y2='28' gradientUnits='userSpaceOnUse'><stop offset='0%25' stop-color='%23818cf8'/><stop offset='100%25' stop-color='%234f46e5'/></linearGradient></defs><rect width='28' height='28' rx='7' fill='url(%23logo-bg)'/><path d='M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z' stroke='white' stroke-width='1.4' stroke-linejoin='round' fill='none' opacity='0.9'/><circle cx='14' cy='14' r='3.8' fill='white' fill-opacity='0.95'/><circle cx='14' cy='14' r='2' fill='%234338ca'/><circle cx='15.2' cy='12.8' r='0.7' fill='white' fill-opacity='0.7'/><line x1='14' y1='5.5' x2='14' y2='7' stroke='white' stroke-width='1.2' stroke-linecap='round' opacity='0.5'/><line x1='14' y1='21' x2='14' y2='22.5' stroke='white' stroke-width='1.2' stroke-linecap='round' opacity='0.5'/><line x1='5.5' y1='14' x2='7' y2='14' stroke='white' stroke-width='1.2' stroke-linecap='round' opacity='0.5'/><line x1='21' y1='14' x2='22.5' y2='14' stroke='white' stroke-width='1.2' stroke-linecap='round' opacity='0.5'/></svg>">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./style.css">
@@ -83,14 +83,25 @@
     <div class="container nav-container">
       <a href="#hero" class="brand-link" aria-label="AISeen Thailand Home">
         <div class="brand-logo-icon">
-          <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
-            <path d="M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z" stroke="white" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
-            <circle cx="14" cy="14" r="3.8" fill="white"/>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-logo-bg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#818cf8"/>
+                <stop offset="100%" stop-color="#4f46e5"/>
+              </linearGradient>
+            </defs>
+            <rect width="28" height="28" rx="7" fill="url(#nav-logo-bg)"/>
+            <path d="M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z" stroke="white" stroke-width="1.4" stroke-linejoin="round" fill="none" opacity="0.9"/>
+            <circle cx="14" cy="14" r="3.8" fill="white" fill-opacity="0.95"/>
             <circle cx="14" cy="14" r="2" fill="#4338ca"/>
-            <circle cx="15.2" cy="12.8" r="0.8" fill="white"/>
+            <circle cx="15.2" cy="12.8" r="0.7" fill="white" fill-opacity="0.7"/>
+            <line x1="14" y1="5.5" x2="14" y2="7" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="14" y1="21" x2="14" y2="22.5" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="5.5" y1="14" x2="7" y2="14" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="21" y1="14" x2="22.5" y2="14" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
           </svg>
         </div>
-        <div style="display: flex; align-items: baseline; gap: 4px;">
+        <div style="display: flex; align-items: baseline; gap: 6px;">
           <span class="brand-name">AISeen</span>
           <span class="brand-badge">TH · Libralytics</span>
         </div>
@@ -140,36 +151,44 @@
   <section class="hero" id="hero">
     <div class="container hero-content">
       <div class="hero-pill">
-        <span class="badge-pulse"></span>
-        <span data-i18n="hero.pill">Powered by <strong>Libralytics</strong> · Engineered for Thailand & Global AI Search</span>
+        <span class="pulse-dot"></span>
+        <span data-i18n="hero.pill">SEO + GEO + Vibe + Security + Privacy — all in one</span>
       </div>
 
-      <h1 class="hero-title">
-        <span data-i18n="hero.title1">Is Your Business</span><br>
-        <span class="highlight" data-i18n="hero.title2">Invisible to ChatGPT?</span>
+      <h1 class="hero-title anim-h1">
+        <span class="title-line-1" data-i18n="hero.title1">Is your site</span>
+        <span class="title-line-2" data-i18n="hero.title2">invisible</span>
+        <span class="title-line-rotator" id="heroRotator">to ChatGPT?</span>
       </h1>
 
-      <p class="hero-subtitle" data-i18n="hero.subtitle">
-        While competitors fight over traditional Google blue links, customers in Bangkok and worldwide are asking <strong>ChatGPT, Perplexity & Gemini</strong>. Check your AI citation probability, technical SEO, OWASP security, and Thailand PDPA in 30 seconds.
+      <p class="hero-sub-badges anim-badge">
+        <span class="sub-badge-item"><span class="dot-indigo">◆</span><span>by <span class="sub-badge-target">Google</span></span></span>
+        <span class="sub-badge-sep">·</span>
+        <span class="sub-badge-item"><span class="dot-emerald">◆</span><span>by <span class="sub-badge-target">AI search</span></span></span>
+        <span class="sub-badge-sep">·</span>
+        <span class="sub-badge-item"><span class="dot-rose">◆</span><span>by <span class="sub-badge-target">security scanners</span></span></span>
+      </p>
+
+      <p class="hero-subtitle anim-subtitle" data-i18n="hero.subtitle">
+        While competitors optimize for Google — their AI search traffic grows. Check SEO, AI Search Health, <strong>Vibe Coding SEO</strong>, security and cookie consent in 30 seconds — free.
       </p>
 
       <!-- Live Search / URL Audit Bar -->
-      <form class="audit-search-box" id="heroAuditForm" onsubmit="event.preventDefault(); runLiveAudit();">
+      <form class="audit-search-box anim-form" id="heroAuditForm" onsubmit="event.preventDefault(); runLiveAudit();">
         <div class="audit-input-wrap">
           <div class="audit-input-icon">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
           </div>
-          <input type="text" class="audit-input" id="auditUrlInput" placeholder="Enter your website URL (e.g. yourcompany.co.th)" value="bangkok-wellness.co.th" required>
+          <input type="text" class="audit-input" id="auditUrlInput" placeholder="yoursite.com" value="bangkok-wellness.co.th" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg" id="btnRunAudit" data-i18n="hero.auditBtn">
-          <span>Run Free Audit</span>
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-          </svg>
+        <button type="submit" class="btn-audit-cta" id="btnRunAudit" data-i18n="hero.auditBtn">
+          <span>Check →</span>
         </button>
       </form>
+
+      <p class="hero-micro-text">No credit card required · Free plan forever · Cancel anytime · LIBOT & LINE OA ready</p>
 
       <!-- Quick Preset Suggestions -->
       <div class="hero-quick-presets">
@@ -181,12 +200,14 @@
       </div>
 
       <!-- Trust Badges Row -->
-      <div class="trust-badges-row">
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.noSignup">No signup required</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.engines">9 AI Engines (GPT-4o, Claude 3.7, Gemini)</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.security">OWASP 2025 Headers</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.vibe">Vibe Coding Flaws</span></div>
-        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.libot">LINE OA & LIBOT Ready</span></div>
+      <div class="trust-badges-row anim-trust">
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.noSignup">No signup</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.engines">9 AI engines</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.security">OWASP 2025 + ZAP</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.vibe">Vibe Score</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.content">Content quality</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.timing">Results in 30s</span></div>
+        <div class="trust-item"><span class="trust-check">✓</span> <span data-i18n="trust.gdpr">GDPR & Cookie check</span></div>
       </div>
     </div>
   </section>
@@ -766,189 +787,230 @@ location ~* /\.(env|git|htaccess|docker|aws) {
 
       <div class="dimensions-grid">
         <!-- 01 AEO -->
-        <div class="dim-card glow-indigo">
+        <div class="dim-card dim-card-01">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">01</span>
-              <span class="dim-pill pill-unique">AI Answers</span>
+              <span class="dim-badge-ref">Beta</span>
             </div>
-            <h3 class="dim-title">AEO & Overviews</h3>
-            <p class="dim-summary">Optimizes your content for featured snippet boxes and AI synthesis engines.</p>
+            <h3 class="dim-title">AEO / Answers</h3>
+            <p class="dim-summary">Answers & Overviews — AI answer visibility checks</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> Passage indexing & direct question answering</li>
-              <li><span class="dim-dot"></span> Structured Q&A schema for answer cards</li>
-              <li><span class="dim-dot"></span> llms.txt standardization for LLMs</li>
+              <li><span class="dim-dot"></span> AI answer boxes & featured snippets</li>
+              <li><span class="dim-dot"></span> Structured data for answer cards</li>
+              <li><span class="dim-dot"></span> Passage indexing & snippet readiness</li>
+              <li><span class="dim-dot"></span> llms.txt visibility signals</li>
             </ul>
           </div>
         </div>
 
         <!-- 02 SEO Score -->
-        <div class="dim-card glow-indigo">
+        <div class="dim-card dim-card-02">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">02</span>
-              <span class="dim-pill pill-popular">60+ Checks</span>
+              <span class="dim-badge-ref">Popular</span>
             </div>
-            <h3 class="dim-title">Technical SEO Score</h3>
-            <p class="dim-summary">Deep crawl inspection across core metadata, semantic hierarchy, and sitemaps.</p>
+            <h3 class="dim-title">SEO Score</h3>
+            <p class="dim-summary">60+ quality checks in 30 seconds</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> Title, meta description, lang & viewport</li>
-              <li><span class="dim-dot"></span> H1/H2 semantic alignment & thin content alerts</li>
-              <li><span class="dim-dot"></span> XML Sitemap health & OpenGraph tags</li>
+              <li><span class="dim-dot"></span> Title, meta, canonical, viewport, lang</li>
+              <li><span class="dim-dot"></span> H1/H2 structure + keyword alignment</li>
+              <li><span class="dim-dot"></span> Thin content (&lt;300 words), schema quality</li>
+              <li><span class="dim-dot"></span> Open Graph, sitemap, images alt</li>
             </ul>
           </div>
         </div>
 
         <!-- 03 AI Search Health -->
-        <div class="dim-card glow-cyan">
+        <div class="dim-card dim-card-03">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">03</span>
-              <span class="dim-pill pill-new">9 AI Engines</span>
+              <span class="dim-badge-ref">Unique to us</span>
             </div>
-            <h3 class="dim-title">AI Search Visibility</h3>
-            <p class="dim-summary">Direct verification of robot accessibility for top generative search systems.</p>
+            <h3 class="dim-title">AI Search Health</h3>
+            <p class="dim-summary">Which of 9 AI engines sees you</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> ChatGPT (GPTBot) & Perplexity (PerplexityBot)</li>
-              <li><span class="dim-dot"></span> ClaudeBot, Google AI Overviews, Apple Intelligence</li>
-              <li><span class="dim-dot"></span> Citation probability scoring algorithm</li>
+              <li><span class="dim-dot"></span> ChatGPT, Perplexity, Gemini, Claude</li>
+              <li><span class="dim-dot"></span> Google AI Overviews, Grok, Meta AI</li>
+              <li><span class="dim-dot"></span> llms.txt — new standard for LLM</li>
+              <li><span class="dim-dot"></span> JSON-LD rich schema for AI understanding</li>
             </ul>
           </div>
         </div>
 
-        <!-- 04 Security & Pentest -->
-        <div class="dim-card glow-emerald">
+        <!-- 04 Security + Pentest -->
+        <div class="dim-card dim-card-04">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">04</span>
-              <span class="dim-pill pill-free">OWASP 2025</span>
+              <span class="dim-badge-ref">Free</span>
             </div>
-            <h3 class="dim-title">Security & Pentest</h3>
-            <p class="dim-summary">Enterprise-grade defense audits covering HTTP headers and vulnerability vectors.</p>
+            <h3 class="dim-title">Security + Pentest</h3>
+            <p class="dim-summary">OWASP 2025 headers + Pentest defense</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> HSTS, Strict CSP, X-Frame-Options (Clickjacking)</li>
-              <li><span class="dim-dot"></span> Defense against Hydra, SQLmap, and FFUF probes</li>
-              <li><span class="dim-dot"></span> Exposed sensitive paths (/.env, /.git, config files)</li>
+              <li><span class="dim-dot"></span> HSTS, CSP, X-Frame-Options, COOP</li>
+              <li><span class="dim-dot"></span> Clickjacking, MIME sniff, CORS</li>
+              <li><span class="dim-dot"></span> Hydra, SQLmap, FFUF path exposure</li>
+              <li><span class="dim-dot"></span> /.env, /.git — exposed sensitive files</li>
             </ul>
           </div>
         </div>
 
-        <!-- 05 Consent & PDPA -->
-        <div class="dim-card glow-amber">
+        <!-- 05 Consent & Privacy -->
+        <div class="dim-card dim-card-05">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">05</span>
-              <span class="dim-pill pill-free">Legal Safe</span>
+              <span class="dim-badge-ref">Free</span>
             </div>
-            <h3 class="dim-title">Privacy & Thai PDPA</h3>
-            <p class="dim-summary">Compliance checks for Thailand's Personal Data Protection Act & GDPR.</p>
+            <h3 class="dim-title">Consent & Privacy</h3>
+            <p class="dim-summary">Cookie consent, trackers & GDPR / Thai PDPA dark patterns</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> 14 major CMP platforms recognized</li>
-              <li><span class="dim-dot"></span> Detection of trackers firing before user consent</li>
-              <li><span class="dim-dot"></span> Dark pattern audit (hidden reject buttons)</li>
+              <li><span class="dim-dot"></span> 14 CMP platforms detected (OneTrust, Cookiebot…)</li>
+              <li><span class="dim-dot"></span> Trackers that fire before user consent</li>
+              <li><span class="dim-dot"></span> GDPR & PDPA dark patterns: no reject button</li>
+              <li><span class="dim-dot"></span> IAB TCF 2.x vendor list detection</li>
             </ul>
           </div>
         </div>
 
         <!-- 06 Vibe Coding SEO -->
-        <div class="dim-card glow-cyan">
+        <div class="dim-card dim-card-06">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">06</span>
-              <span class="dim-pill pill-new">AI-Built Sites</span>
+              <span class="dim-badge-ref">New 🆕</span>
             </div>
             <h3 class="dim-title">Vibe Coding SEO</h3>
-            <p class="dim-summary">Catches the subtle technical flaws introduced when coding with AI assistants.</p>
+            <p class="dim-summary">6 Vibe Coding SEO checks — free</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> Empty CSR shells invisible to basic bots</li>
-              <li><span class="dim-dot"></span> Trailing slash duplicate URL indexing</li>
-              <li><span class="dim-dot"></span> JavaScript bundle bloat & unhydrated markup</li>
+              <li><span class="dim-dot"></span> SSR vs CSR — does Googlebot see content?</li>
+              <li><span class="dim-dot"></span> Trailing slash duplicates (Google indexes both)</li>
+              <li><span class="dim-dot"></span> Canonical tag self-reference check</li>
+              <li><span class="dim-dot"></span> JS bundle weight — Core Web Vitals impact</li>
             </ul>
           </div>
         </div>
 
         <!-- 07 Payment Security -->
-        <div class="dim-card glow-emerald">
+        <div class="dim-card dim-card-07">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">07</span>
-              <span class="dim-pill pill-free">PCI-DSS</span>
+              <span class="dim-badge-ref">Free</span>
             </div>
             <h3 class="dim-title">Payment Security</h3>
-            <p class="dim-summary">Verifies payment checkout security for Thai & global gateways.</p>
+            <p class="dim-summary">PCI-DSS payment page audit — free for all plans</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> Mixed content elimination on checkout screens</li>
-              <li><span class="dim-dot"></span> PromptPay, 2C2P, Omise, Stripe & PayPal detection</li>
-              <li><span class="dim-dot"></span> Subresource Integrity (SRI) on payment SDKs</li>
+              <li><span class="dim-dot"></span> HTTPS + HSTS enforcement</li>
+              <li><span class="dim-dot"></span> Mixed content on checkout pages</li>
+              <li><span class="dim-dot"></span> Script integrity (SRI) on payment SDKs</li>
+              <li><span class="dim-dot"></span> Stripe / PromptPay / 2C2P / PayPal detection</li>
             </ul>
           </div>
         </div>
 
-        <!-- 08 Speed & Vitals -->
-        <div class="dim-card glow-indigo">
+        <!-- 08 Site Speed & Validation -->
+        <div class="dim-card dim-card-08">
           <div class="dim-top">
             <div class="dim-header-row">
               <span class="dim-num">08</span>
-              <span class="dim-pill pill-free">Web Vitals</span>
+              <span class="dim-badge-ref">Free</span>
             </div>
-            <h3 class="dim-title">Speed & Validation</h3>
-            <p class="dim-summary">Time to First Byte (TTFB), asset compression, and clean DOM trees.</p>
+            <h3 class="dim-title">Site Speed & Validation</h3>
+            <p class="dim-summary">TTFB, compression, cache & HTML validation</p>
             <ul class="dim-checklist">
-              <li><span class="dim-dot"></span> TTFB benchmark &lt; 250ms worldwide</li>
-              <li><span class="dim-dot"></span> Brotli & Gzip compression verification</li>
-              <li><span class="dim-dot"></span> Cache-Control headers & CDN caching</li>
+              <li><span class="dim-dot"></span> Time to First Byte (TTFB)</li>
+              <li><span class="dim-dot"></span> gzip / brotli compression check</li>
+              <li><span class="dim-dot"></span> Missing alt, title, meta description</li>
+              <li><span class="dim-dot"></span> Cache-Control, ETag, resource hints</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Vibe Coding Deep-Dive Grid -->
-      <div class="vibe-banner">
-        <div class="vibe-banner-header">
-          <div class="vibe-title-group">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.5rem;">⚡</span>
-              <h4>Vibe Coding SEO — Common AI-Generated Code Traps</h4>
-            </div>
-            <p>AI coding tools write great visual designs, but frequently overlook these 6 critical search crawler traps:</p>
+      <!-- Vibe Coding Deep-Dive Grid (Reference CI) -->
+      <div class="vibe-sub-banner">
+        <div class="vibe-sub-banner-header">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <p style="font-size: 0.75rem; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">
+              Vibe Coding SEO — what AI-generated sites get wrong
+            </p>
+            <span class="dim-badge-ref" style="background: rgba(6, 182, 212, 0.15); color: #22d3ee; border-color: rgba(6, 182, 212, 0.25);">Free for all plans</span>
           </div>
-          <span class="badge-tag cyan" style="margin-bottom: 0;">Included in All Plans</span>
         </div>
 
-        <div class="vibe-checks-grid">
-          <div class="vibe-check-box">
-            <span class="vibe-emoji">🤖</span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">🤖</span>
             <div>
-              <div class="vibe-item-title">Blank CSR Shell</div>
-              <div class="vibe-item-desc">Bots fetch 0-byte HTML before client React mounts.</div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">CSR Shell</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Googlebot sees empty page</p>
             </div>
           </div>
-          <div class="vibe-check-box">
-            <span class="vibe-emoji">🔀</span>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">🔀</span>
             <div>
-              <div class="vibe-item-title">Trailing Slashes</div>
-              <div class="vibe-item-desc">Both /page and /page/ indexed as duplicate content.</div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Trailing slash</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Duplicate pages in Google</p>
             </div>
           </div>
-          <div class="vibe-check-box">
-            <span class="vibe-emoji">📍</span>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">📍</span>
             <div>
-              <div class="vibe-item-title">Canonical Errors</div>
-              <div class="vibe-item-desc">Mismatched domain protocol or localhost leaks.</div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Canonical tag</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Self-reference mismatch</p>
             </div>
           </div>
-          <div class="vibe-check-box">
-            <span class="vibe-emoji">📦</span>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">📦</span>
             <div>
-              <div class="vibe-item-title">Bundle Bloat</div>
-              <div class="vibe-item-desc">>15 chunk scripts dragging down Mobile Core Vitals.</div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">JS bundle weight</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&gt;12 scripts = slow crawl</p>
             </div>
           </div>
-          <div class="vibe-check-box">
-            <span class="vibe-emoji">🍪</span>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">🔗</span>
             <div>
-              <div class="vibe-item-title">PDPA Dark Patterns</div>
-              <div class="vibe-item-desc">No reject button in banner risks fines in Thailand.</div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">URL architecture</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&lt;3 crawlable links</p>
+            </div>
+          </div>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">📋</span>
+            <div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">JSON-LD schema</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">No rich snippets possible</p>
+            </div>
+          </div>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">📝</span>
+            <div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Thin content</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">&lt;300 words = critical</p>
+            </div>
+          </div>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">🏗️</span>
+            <div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">H1↔Title mismatch</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Keywords don't match</p>
+            </div>
+          </div>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">🍪</span>
+            <div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Cookie consent</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">CMP, pre-consent trackers</p>
+            </div>
+          </div>
+          <div class="quality-check-item">
+            <span style="font-size: 1.25rem;">⚠️</span>
+            <div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: #fff;">Dark patterns</p>
+              <p style="font-size: 0.75rem; color: #a1a1aa; margin-top: 2px;">Hidden reject button</p>
             </div>
           </div>
         </div>
@@ -1368,6 +1430,15 @@ location ~* /\.(env|git|htaccess|docker|aws) {
         </p>
       </div>
 
+      <!-- Competitor Comparison Strike Row (Reference CI) -->
+      <div class="pricing-strike-row">
+        <span class="strike-item">Semrush $120/mo</span>
+        <span class="strike-sep">·</span>
+        <span class="strike-item">Ahrefs $99/mo</span>
+        <span class="strike-sep">·</span>
+        <span class="strike-highlight">AISeen — fraction of the price + Security + AI visibility</span>
+      </div>
+
       <!-- Billing Cycle Toggle (Monthly vs Annual with 20% discount) -->
       <div class="pricing-controls">
         <div class="billing-toggle-wrap">
@@ -1565,10 +1636,22 @@ location ~* /\.(env|git|htaccess|docker|aws) {
         <div class="footer-brand">
           <a href="#hero" class="brand-link">
             <div class="brand-logo-icon">
-              <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
-                <path d="M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z" stroke="white" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
-                <circle cx="14" cy="14" r="3.8" fill="white"/>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="footer-logo-bg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#818cf8"/>
+                    <stop offset="100%" stop-color="#4f46e5"/>
+                  </linearGradient>
+                </defs>
+                <rect width="28" height="28" rx="7" fill="url(#footer-logo-bg)"/>
+                <path d="M4.5 14C7.5 8.5 20.5 8.5 23.5 14C20.5 19.5 7.5 19.5 4.5 14Z" stroke="white" stroke-width="1.4" stroke-linejoin="round" fill="none" opacity="0.9"/>
+                <circle cx="14" cy="14" r="3.8" fill="white" fill-opacity="0.95"/>
                 <circle cx="14" cy="14" r="2" fill="#4338ca"/>
+                <circle cx="15.2" cy="12.8" r="0.7" fill="white" fill-opacity="0.7"/>
+                <line x1="14" y1="5.5" x2="14" y2="7" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+                <line x1="14" y1="21" x2="14" y2="22.5" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+                <line x1="5.5" y1="14" x2="7" y2="14" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+                <line x1="21" y1="14" x2="22.5" y2="14" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
               </svg>
             </div>
             <span class="brand-name">AISeen Thailand</span>
