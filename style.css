@@ -312,42 +312,56 @@ body {
 }
 
 .brand-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: inline-flex;
+  flex-direction: column;
   text-decoration: none;
-  color: #fff;
+  line-height: 1;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
-.brand-logo-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+.brand-link:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.brand-wordmark {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
-  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  user-select: none;
 }
 
-.brand-name {
+.brand-main {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.625rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
 }
 
-.brand-badge {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 6px;
-  background: rgba(6, 182, 212, 0.15);
-  border: 1px solid rgba(6, 182, 212, 0.35);
-  color: var(--accent-cyan-light);
-  letter-spacing: 0.04em;
-  margin-left: 2px;
+.brand-ai {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.brand-seen {
+  color: #34d399; /* authentic forest/emerald green from reference screenshot */
+  font-weight: 800;
+  margin-left: 0.5px;
+}
+
+.brand-thailand {
+  font-family: var(--font-heading);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-top: 3px;
+  line-height: 1;
+  padding-left: 1px;
 }
 
 .nav-links {
